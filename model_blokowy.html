@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles_model.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap" rel="stylesheet">
+    <title>Model blokowy</title>
+
+    <script>
+        function Sprawdz() {
+            var licznik = 0;
+
+            // pytanie 1
+            f1 = document.forms[0];
+            if (f1.p1a.checked == true && f1.p1b.checked == true && f1.p1c.checked == false && f1.p1d.checked == false && f1.p1e.checked == true && f1.p1f.checked == false) {
+                licznik++;
+                document.getElementById("odp1").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp1").innerHTML = "Źle";
+        
+             //pytanie 2
+             f2 = document.forms[1];
+            if (f2.p2.value == "c") {
+                licznik++;
+                document.getElementById("odp2").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp2").innerHTML = "Źle";
+
+
+                document.getElementById("wynik").innerHTML = licznik;
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1 class="litera">Model blokowy</h1>
+        <div id="fade" ></div>
+        <div id="fade2" ></div>     
+        
+    </header>
+    <div class="foot"><p>Oliwia Skała | Tomasz Sobczyk | 3CT</p></div>
+
+    <a id="powrot" href="index.html">Powrót</a>
+    <section>
+
+        <div class="zawartosc"> <!-- child 1 -->
+            <h2>MODEL BLOKOWY</h2>
+            <p><b>Model blokowy</b> w CSS opisuje bloki, które są tworzone dla elementów HTML. Definiuje ustawienie marginesów: zewnętrznych i wewnętrznych, obramowania i zawartości każdego elementu.</p><br>
+
+            <p>Struktura modelu blokowego:
+                <img src="obrazki/model_blokowy/blokowy.png">
+            </p>
+        </div>
+
+        <div class="zawartosc"> <!-- child 2 -->
+            <h2>MODEL BLOKOWY</h2>
+            <p><b>margin</b> - margines zewnętrzny</p><br>
+            <p><b>padding</b> - margines wewnętrzny</p><br>
+            <p><b>border</b> - obramowanie</p><br>
+
+            <p>Przykład, jak zmienia się blok:</p><br>
+
+            <div class="blokulec">
+                <p>
+                    <div title=".blokulec2 {
+                        width: 200px;
+                        height: 200px;
+                        background-color: orange;
+                    }" class="blokulec2">Przykładowy blok z tekstem. (width: 200px;<br> height: 200px;)</div>
+                </p>
+            </div><br>
+
+            <div class="blokulec">
+                <p>
+                    <div title=".blokulec3 {
+                        width: 200px;
+                        height: 200px;
+                        background-color: orange;
+                        border: 10px solid white;
+                    }" class="blokulec3">Przykładowy blok z tekstem. + border</div>
+                </p>
+            </div><br>
+
+            <div class="blokulec">
+                <p>
+                    <div title=".blokulec4 {
+                        width: 200px;
+                        height: 200px;
+                        background-color: orange;
+                        border: 10px solid white;
+                        padding: 20px;
+                    }" class="blokulec4">Przykładowy blok z tekstem. + padding</div>
+                </p>
+            </div><br>
+
+            <div class="blokulec">
+                <p>
+                    <div title=".blokulec5 {
+                        width: 200px;
+                        height: 200px;
+                        background-color: orange;
+                        border: 10px solid white;
+                        padding: 20px;
+                        margin: 25px;
+                    }
+                    " class="blokulec5">Przykładowy blok z tekstem. + margin</div>
+                </p>
+            </div><br>
+
+            <span class="tekstprzez"> (najedź na blok aby wyświetlić dymek z kodem CSS)</span><br>
+
+        </div>
+
+
+
+        <hr> <!-- child 3 -->
+
+
+
+        <div class="zawartosc"> <!-- child 4  -->
+            <h2>ZADANIA</h2>
+            <form>
+                <ol>
+                    <li>
+                        <label><b>W skład modelu blokowego wchodzi:</b></label><br>
+                        <input  type="checkbox" name="p1a" value="a"> margin<br>
+                        <input  type="checkbox" name="p1b" value="b"> padding<br>
+                        <input  type="checkbox" name="p1c" value="c"> block<br>
+                        <input  type="checkbox" name="p1d" value="d"> display<br>
+                        <input  type="checkbox" name="p1e" value="e"> border<br>
+                        <input  type="checkbox" name="p1f" value="f"> inline<br>
+                    </li>
+                    <span id="odp1"></span>
+            </form>
+            <form>        
+                    <li>
+                        <label><b>Margines wewnętrzny to:</b></label><br>
+                        <input type="radio" name="p2" value="a"> height<br>
+                        <input type="radio" name="p2" value="b"> margin<br>
+                        <input type="radio" name="p2" value="c"> padding<br>
+                        <input type="radio" name="p2" value="d"> width<br>
+                    </li>
+                    <span id="odp2"></span>
+            </form>
+        </ol>
+            <input id="przycisk" onclick="Sprawdz()" type="button" value="SPRAWDŹ">
+
+            <p>Twój wynik to <span id="wynik"></span>/2 pkt.</p>
+        </div>
+
+    </section>
+
+
+</body>
+</html>

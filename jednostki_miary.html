@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles_jednostki.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap" rel="stylesheet">
+    <title>Jednostki miary i kolory</title>
+
+    <script>
+        function Sprawdz() {
+            var licznik = 0;
+
+            // pytanie 1
+            f1 = document.forms[0];
+            if (f1.p1a.checked == true && f1.p1b.checked == false && f1.p1c.checked == true && f1.p1d.checked == true && f1.p1e.checked == false) {
+                licznik++;
+                document.getElementById("odp1").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp1").innerHTML = "Źle";
+        
+             //pytanie 2
+             f2 = document.forms[1];
+            if (f2.p2.value == "c") {
+                licznik++;
+                document.getElementById("odp2").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp2").innerHTML = "Źle";
+
+
+                document.getElementById("wynik").innerHTML = licznik;
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1 class="litera">Jednostki miary i kolory</h1>
+        <div id="fade" ></div>
+        <div id="fade2" ></div>     
+        
+    </header>
+    <div class="foot"><p>Oliwia Skała | Tomasz Sobczyk | 3CT</p></div>
+
+    <a id="powrot" href="index.html">Powrót</a>
+    <section>
+
+        <div class="zawartosc"> <!-- child 1 -->
+            <h2>JEDNOSTKI WZGLĘDNE</h2>
+            <p><b>px</b> - piksele</p><br>
+            <p><b>em</b> - proporcje względem wielkości czcionki</p><br>
+            <p><b>ex</b> - proporcje względem wysokości x czcionki</p><br>
+            <p><b>%</b> - procenty</p><br>
+
+            <div class="blokulec">
+                <span title="#jednostki1 {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    font-size: 30px;
+                }" id="jednostki1">px</span><span title="#jednostki2 {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    font-size: 1.1em;
+                }" id="jednostki2">em</span><span title="#jednostki3 {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    font-size: 1.2ex;
+                }" id="jednostki3">ex</span><span title="#jednostki4 {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    font-size: 150%;
+                }" id="jednostki4">%</span>
+            </div><br>
+
+            <span class="tekstprzez"> (najedź na tekst aby wyświetlić dymek z kodem CSS)</span><br>
+
+        </div>
+
+        <div class="zawartosc"> <!-- child 2 -->
+            <h2>JEDNOSTKI BEZWZGLĘDNE</h2>
+            <p><b>in</b> - cale</p><br>
+            <p><b>pt</b> - punkty (jedonsta wywodzi się z typografii; 72pt = 1in)</p><br>
+            <p><b>cm</b> - centymetry</p><br>
+            <p><b>mm</b> - milimetry</p><br>
+            <p><b>pc</b> - pica (jedonsta wywodzi się z typografii; 1pc = 12pt) </p><br>
+
+            <div class="blokulec">
+                <span title="#jednostki5 {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    font-size: 0.5in;
+                }" id="jednostki5">in</span><span title="#jednostki6 {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    font-size: 20pt;
+                }" id="jednostki6">pt</span><span title="#jednostki7 {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    font-size: 1cm;
+                }" id="jednostki7">cm</span><span title="#jednostki8 {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    font-size: 5mm;
+                }" id="jednostki8">mm</span><span title="#jednostki9 {
+                    background-color: rgba(0, 0, 0, 0.1);
+                    font-size: 3pc;
+                }" id="jednostki9">pc</span>
+            </div><br>
+
+            <span class="tekstprzez"> (najedź na tekst aby wyświetlić dymek z kodem CSS)</span><br>
+
+        </div>
+
+        <div class="zawartosc"> <!-- child 3 -->
+            <h2>JEDNOSTKI KĄTOWE I CZASU</h2>
+            <p>W CSS używa się również jedostki kątowe oraz czasu np. do animacji.</p><br>
+            <p><b>ms</b> - milisekunda</p><br>
+            <p><b>s</b> - sekunda</p><br>
+            <p><b>deg</b> - stopnie</p><br>
+            <p><b>rad</b> - radiany</p><br>
+        </div>
+
+        <div class="zawartosc"> <!-- child 4 -->
+            <h2>KOLORY</h2>
+            <p>Kodowanie kolorów w CSS można wykonać przez:</p><br>
+
+            <p><b>Podanie nazwy koloru:</b>
+                <div class="blokulec2">
+                    <div title="#kolory1 {
+                        margin: 5px;
+                        padding: 5px;
+                        background-color: red;
+                    }" id="kolory1">background-color: red;</div>
+                </div>
+            </p><br>
+
+            <p><b>Za pomocą modelu barw RGB, korzystając z liczb:</b>
+                <div class="blokulec2">
+                    <div title="#kolory2 {
+                        margin: 5px;
+                        padding: 5px;
+                        background-color: rgb(255, 153, 102);
+                    }" id="kolory2">background-color: rgb(255, 153, 102);</div>
+                </div>
+            </p><br>
+
+            <p><b>Za pomocą modelu barw RGB, korzystając z procentów:</b>
+                <div class="blokulec2">
+                    <div title="#kolory3 {
+                        margin: 5px;
+                        padding: 5px;
+                        background-color: rgb(20%, 100%, 70%);
+                    }" id="kolory3">background-color: rgb(20%, 100%, 70%);</div>
+                </div>
+            </p><br>
+
+            <p><b>Za pomocą modelu barw RGBA:</b>
+                <div class="blokulec2">
+                    <div title="#kolory4 {
+                        margin: 5px;
+                        padding: 5px;
+                        background-color: rgba(77, 166, 255, 0.5);
+                    }" id="kolory4">background-color: rgba(77, 166, 255, 0.5);</div>
+                </div>
+            </p><br>
+
+            <p><b>Za pomocą modelu barw HLS:</b>
+                <div class="blokulec2">
+                    <div title="#kolory5 {
+                        margin: 5px;
+                        padding: 5px;
+                        background-color: hsl(260, 100%, 70%);
+                    }" id="kolory5">background-color: hsl(260, 100%, 70%);</div>
+                </div>
+            </p><br>
+
+            <p><b>Za pomocą modelu barw HLSA:</b>
+                <div class="blokulec2">
+                    <div title="#kolory6 {
+                        margin: 5px;
+                        padding: 5px;
+                        background-color: hsl(300, 100%, 70%, 0.3);
+                    }" id="kolory6">background-color: hsl(300, 100%, 70%, 0.3);</div>
+                </div>
+            </p><br>
+
+            <p><b>Za pomocą systemu szesnastkowego:</b>
+                <div class="blokulec2">
+                    <div title="#kolory7 {
+                        margin: 5px;
+                        padding: 5px;
+                        background-color: #55ff00;
+                    }" id="kolory7">background-color: #55ff00;</div>
+                </div>
+            </p><br>
+        </div>
+
+        <hr> <!-- child 5 -->
+
+
+
+        <div class="zawartosc"> <!-- child 6 -->
+            <h2>ZADANIA</h2>
+            <form>
+                <ol>
+                    <li>
+                        <label><b>Zaznacz jednostki względne:</b></label><br>
+                        <input  type="checkbox" name="p1a" value="a"> em<br>
+                        <input  type="checkbox" name="p1b" value="b"> pt<br>
+                        <input  type="checkbox" name="p1c" value="c"> %<br>
+                        <input  type="checkbox" name="p1d" value="d"> px<br>
+                        <input  type="checkbox" name="p1e" value="e"> in<br>
+                    </li>
+                    <span id="odp1"></span>
+            </form>
+            <form>        
+                    <li>
+                        <label><b>Gdzie poprawnie zdefiniowano kolor tła:</b></label><br>
+                        <input type="radio" name="p2" value="a">
+                        background-color: hue(130, 100%, 50%);<br>
+                        <input type="radio" name="p2" value="b">
+                        background-color: #ZYXZ00;<br>
+                        <input type="radio" name="p2" value="c">
+                        background-color: lightblue;<br>
+                        <input type="radio" name="p2" value="d">
+                        background-color: rgb(350, 255, 300);<br>
+                    </li>
+                    <span id="odp2"></span>
+            </form>
+        </ol>
+            <input id="przycisk" onclick="Sprawdz()" type="button" value="SPRAWDŹ">
+
+            <p>Twój wynik to <span id="wynik"></span>/2 pkt.</p>
+        </div>
+
+    </section>
+
+
+</body>
+</html>

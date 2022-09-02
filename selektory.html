@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles_selektory.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap" rel="stylesheet">
+    <title>Selektory</title>
+    <script src="darkmode.js" async></script>
+    <script>
+        function Sprawdz() {
+            var licznik = 0;
+
+            // pytanie 1
+            f1 = document.forms[0];
+            if (f1.p1.value == "a") {
+                licznik++;
+                document.getElementById("odp1").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp1").innerHTML = "Źle";
+
+            // pytanie 2
+            f2 = document.forms[1];
+            if (f2.p2.value == "c") {
+                licznik++;
+                document.getElementById("odp2").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp2").innerHTML = "Źle";
+        
+
+            //pytanie 3
+            f3 = document.forms[2];
+            if (f3.p3.value == "a") {
+                licznik++;
+                document.getElementById("odp3").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp3").innerHTML = "Źle";
+
+                document.getElementById("wynik").innerHTML = licznik;
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1 class="litera">Selektory</h1>
+        <div id="fade" ></div>
+        <div id="fade2" ></div>    
+        
+    </header>
+    <div id="foot">
+        <div id="darkBox">
+            <input id="darkSwitch" type="checkbox">
+            <label for="darkSwitch">
+                <div id="darkBall"></div>
+            </label>
+        </div>
+        <p>Oliwia Skała | Tomasz Sobczyk | 3CT</p></div>
+
+    <a id="powrot" href="index.html">Powrót</a>
+    <section>
+
+        <div class="zawartosc"> <!-- child 1 -->
+            <h2>SELEKTORY</h2>
+            <p><b>Selektory CSS</b> mogą się odnosić do elementów HTML, takich jak: <b>konkretne znaczniki, identyfikatory (id), klasy (class) oraz inne atrybuty.</b></p>
+        </div>
+
+        <hr> <!-- child 2 -->
+
+        <div class="zawartosc"> <!-- child 3 -->
+            <h2>1. SELEKTOR PROSTY</h2>
+            <p>Jeżeli slektorem jest dowolny znacznik języka HTML, to mamy do czynienia z <b>selektorem prostym</b>. Formatowanie znaczników polega na definiowaniu selektorów za pomocą ich nazw.</p>
+            <span class="script">
+                h2 {
+                    color: red;
+                }
+            </span>
+            <p>Można również grupować selektory znaczników, które mają mieć identyczne właściwości.</p>
+            <span class="script">
+                h1, p, i {
+                    color: red;
+                }
+            </span>
+        </div>
+
+        <div class="zawartosc"> <!-- child 4 -->
+            <h2>2. SELEKTOR ID</h2>
+            <p>Do identyfikacji poszczególnych elementów używa się <b>identyfikatorów</b> (w skrócie id). Każdy identyfikator ma unikalną nazwę w obszarze jednego dokumentu. Tę nazwę można wykorzystać jako selektor do formatowania elementu, który identyfikuje. <b>Zapis selektora id zawsze poprzedzamy #</b>.</p><br>
+            <p>Dla elementu <span class="script">&ltdiv id="stopka">&lt/div></span> definiowanie formatowania w CSS bedzie wyglądać:</p>
+            <span class="script">
+                #stopka {
+                    text-align: center;
+                    color: green;
+                }
+            </span>
+        </div>
+
+        <div class="zawartosc"> <!-- child 5 -->
+            <h2>3. SELEKTOR CLASS</h2>
+            <p>Inną metodą definiowania selektora jest <b>klasa</b>. Klasy definiuje się atrybutem <b>class</b>. Selektor klasy odszukuje wiele elementów z tą samą nazwą klasy. Atrybut klasy można używać wielokrotnie w obrębie jednego dokumentu, dzięki czemu jesteśmy w stanie formatować wiele elementów jednocześnie. Zapis selektora class zawsze poprzedzamy <b>"."</b>.</p><br>
+            <p>Dla elementu <span class="script">&ltdiv class="stopka">&lt/div></span> definiowanie formatowania w CSS bedzie wyglądać:</p>
+            <span class="script">
+                .stopka {
+                    text-align: center;
+                    color: red;
+                }
+            </span>
+            <p>Jeśli chcemy formatować część takich samych znaczników, również możemy użyć atrybutu class.</p>
+            <p>Dla elementu <span class="script">&ltp class="inny"> Tekst &lt/p></span> definiowanie formatowania w CSS bedzie wyglądać:</p>
+            <span class="script">
+                p.inny {
+                    color: red;
+                }
+            </span>
+        </div>
+
+        <hr> <!-- child 6 -->
+
+        <div class="zawartosc"> <!-- child 7 -->
+            <h2>SELEKTORY</h2>
+            <p>W CSS stosuje się również <b>selektory uniwersalne</b>, oznaczone znakiem <b>*</b>. Są one najwyższego poziomu tak jak body.</p><br>
+            <p>Hierarchiczny układ elementów HTML pozwala na stosowanie selektorów zależnych od elementów umieszczonych wyżej w hierarchii, na tym samym poziomie lub niżej. Mówimy wtedy o <b>selektorach potomka</b>, <b>selektorach dziecka</b> lub <b>selektora braci</b>.</p><br>
+            <p></p>
+            <img id="zdj1" src="obrazki/selektory/Screenshot_1.png">
+            <p>W skrypcie wyżej wykorzystano <b>selektor potomka</b>. Tylko element <b>li</b> który jest potomkiem <b>ul</b> został zmieniony.</p>
+        </div>
+
+        <hr> <!-- child 8 -->
+
+        <div class="zawartosc">  <!-- child 9 -->
+            <h2>ZADANIA</h2>
+            <form>
+                <ol>
+                    <li>
+                        <label><b>Którą z metod definiowania selektora<br> wykorzystuję się tylko raz w obszarze<br> jednego dokumentu?</b></label><br>
+                        <input id="p1a" type="radio" name="p1" value="a"> id<br>
+                        <input id="p1b" type="radio" name="p1" value="b"> class<br>
+                        <input id="p1c" type="radio" name="p1" value="c"> selektor prosty<br>
+                        <input id="p1d" type="radio" name="p1" value="d"> selektor potomka<br>
+                    </li>
+                    <span id="odp1"></span>
+            </form>
+            <form>
+                    <li>
+                        <label><b>Gdzie poprawnie zdefiniowano<br> element &ltdiv class="box">&lt/div>?</b></label><br>
+                        <input id="p2a" type="radio" name="p2" value="a"> #box {width: 20px;}<br>
+                        <input id="p2b" type="radio" name="p2" value="b"> box {width: 20px;}<br>
+                        <input id="p2c" type="radio" name="p2" value="c">  .box {width: 20px;}<br>
+                        <input id="p2d" type="radio" name="p2" value="d">  div#box {width: 20px;}<br>
+                    </li>
+                    <span id="odp2"></span>
+            </form>
+            <form>
+                    <li>
+                        <label><b>Selektor uniwersalny jest oznaczony znakiem:</b></label><br>
+                        <input id="p3a" type="radio" name="p3" value="a"> *<br>
+                        <input id="p3b" type="radio" name="p3" value="b"> #<br>
+                        <input id="p3c" type="radio" name="p3" value="c"> .<br>
+                        <input id="p3d" type="radio" name="p3" value="d"> @<br>
+                    </li>
+                    <span id="odp3"></span>
+                </ol>
+            </form>
+            <input id="przycisk" onclick="Sprawdz()" type="button" value="SPRAWDŹ">
+
+            <p>Twój wynik to <span id="wynik"></span>/3 pkt.</p>
+        </div>
+
+    </section>
+
+
+</body>
+</html>

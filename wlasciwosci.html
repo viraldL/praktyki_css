@@ -1,0 +1,1905 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles_wlasciwosci.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap" rel="stylesheet">
+    <title>Właściwości i wartości</title>
+    <script src="darkmode.js" async></script>
+    <script>
+        //TEKST
+        function Sprawdz1() {
+            var licznik1 = 0;
+
+            // pytanie 1
+            f1 = document.forms[0];
+            if (f1.p1.value == "c") {
+                licznik1++;
+                document.getElementById("odp1-1").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp1-1").innerHTML = "Źle";
+        
+             //pytanie 2
+             f2 = document.forms[1];
+             if (f2.p2.value == "a") {
+                licznik1++;
+                document.getElementById("odp1-2").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp1-2").innerHTML = "Źle";
+
+            //pytanie 3
+            f3 = document.forms[2];
+            if (f3.p3.value == "c") {
+                licznik1++;
+                document.getElementById("odp1-3").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp1-3").innerHTML = "Źle";   
+
+
+                document.getElementById("wynik1").innerHTML = licznik1;
+        }
+
+            //CZCIONKA
+            function Sprawdz2() {
+            var licznik2 = 0;
+
+            // pytanie 1
+            f4 = document.forms[3];
+            if (f4.p1a.checked == true && f4.p1b.checked == true && f4.p1c.checked == true && f4.p1d.checked == false) {
+                licznik2++;
+                document.getElementById("odp2-1").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp2-1").innerHTML = "Źle";
+        
+             //pytanie 2
+             f5 = document.forms[4];
+             if (f5.p2.value == "c") {
+                licznik2++;
+                document.getElementById("odp2-2").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp2-2").innerHTML = "Źle";
+
+            //pytanie 3
+            f6 = document.forms[5];
+            if (f6.p3a.checked == true && f6.p3b.checked == false && f6.p3c.checked == false && f6.p3d.checked == true && f6.p3e.checked == false && f6.p3f.checked == true &&f6.p3g.checked == false) {
+                licznik2++;
+                document.getElementById("odp2-3").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp2-3").innerHTML = "Źle";   
+
+
+                document.getElementById("wynik2").innerHTML = licznik2;
+        }
+
+            //SKALOWANIE
+            function Sprawdz3() {
+            var licznik3 = 0;
+
+            // pytanie 1
+            f7 = document.forms[6];
+            if (f7.p1a.checked == false && f7.p1b.checked == true && f7.p1c.checked == false && f7.p1d.checked == true) {
+                licznik3++;
+                document.getElementById("odp3-1").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp3-1").innerHTML = "Źle";
+        
+             //pytanie 2
+             f8 = document.forms[7];
+             if (f8.p2.value == "a") {
+                licznik3++;
+                document.getElementById("odp3-2").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp3-2").innerHTML = "Źle";
+
+
+
+                document.getElementById("wynik3").innerHTML = licznik3;
+        }
+
+            //TŁO
+            function Sprawdz4() {
+            var licznik4 = 0;
+
+            // pytanie 1
+            f9 = document.forms[8];
+            if (f9.p1.value == "c") {
+                licznik4++;
+                document.getElementById("odp4-1").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp4-1").innerHTML = "Źle";
+        
+             //pytanie 2
+             f10 = document.forms[9];
+             if (f10.p2.value == "a") {
+                licznik4++;
+                document.getElementById("odp4-2").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp4-2").innerHTML = "Źle";
+
+            //pytanie 3
+            f11 = document.forms[10];
+            if (f11.p3.value == "c") {
+                licznik4++;
+                document.getElementById("odp4-3").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp4-3").innerHTML = "Źle";   
+
+
+                document.getElementById("wynik4").innerHTML = licznik4;
+        }
+
+            //WYKAZY
+            function Sprawdz5() {
+            var licznik5 = 0;
+
+            // pytanie 1
+            f12 = document.forms[11];
+            if (f12.p1.value == "d") {
+                licznik5++;
+                document.getElementById("odp5-1").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp5-1").innerHTML = "Źle";
+        
+             //pytanie 2
+             f13 = document.forms[12];
+            if (f13.p2.value == "b") {
+                licznik5++;
+                document.getElementById("odp5-2").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp5-2").innerHTML = "Źle";
+
+
+                document.getElementById("wynik5").innerHTML = licznik5;
+        }
+
+            //OBRAMOWANIA
+            function Sprawdz6() {
+            var licznik6 = 0;
+
+            // pytanie 1
+            f14 = document.forms[13];
+            if (f14.p1.value == "d") {
+                licznik6++;
+                document.getElementById("odp6-1").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp6-1").innerHTML = "Źle";
+        
+             //pytanie 2
+             f15 = document.forms[14];
+            if (f15.p2.value == "a") {
+                licznik6++;
+                document.getElementById("odp6-2").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp6-2").innerHTML = "Źle";
+
+
+                document.getElementById("wynik6").innerHTML = licznik6;
+        }
+
+
+
+            //TABELA
+            function Sprawdz7() {
+            var licznik7 = 0;
+
+            // pytanie 1
+            f16 = document.forms[15];
+            if (f16.p1.value == "c") {
+                licznik7++;
+                document.getElementById("odp7-1").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp7-1").innerHTML = "Źle";
+
+
+
+                document.getElementById("wynik7").innerHTML = licznik7;
+        }   
+        
+            //LINKI
+            function Sprawdz8() {
+            var licznik8 = 0;
+
+            // pytanie 1
+            f17 = document.forms[16];
+            if (f17.p1a.checked == false && f17.p1c.checked == false && f17.p1b.checked == true && f17.p1d.checked == true) {
+                licznik8++;
+                document.getElementById("odp8-1").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp8-1").innerHTML = "Źle";
+
+
+
+                document.getElementById("wynik8").innerHTML = licznik8;
+        }
+        
+            //LINKI
+            function Sprawdz9() {
+            var licznik9 = 0;
+
+            // pytanie 1
+            f18 = document.forms[17];
+            if (f18.p1.value == "a") {
+                licznik9++;
+                document.getElementById("odp9-1").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp9-1").innerHTML = "Źle";
+
+
+
+                document.getElementById("wynik9").innerHTML = licznik9;
+        } 
+
+
+            //LINKI
+            function Sprawdz10() {
+            var licznik10 = 0;
+
+            // pytanie 1
+            f19 = document.forms[18];
+            if (f19.p1.value == "b") {
+                licznik10++;
+                document.getElementById("odp10-1").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp10-1").innerHTML = "Źle";
+
+            // pytanie 1
+            f20 = document.forms[19];
+            if (f20.p2.value == "a") {
+                licznik10++;
+                document.getElementById("odp10-2").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp10-2").innerHTML = "Źle";
+
+
+
+                document.getElementById("wynik10").innerHTML = licznik10;
+        } 
+
+
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1 class="litera">Właściwości i wartości</h1>
+        <div id="fade" ></div>   
+        <div id="fade2" ></div>   
+        
+    </header>
+    <div id="foot">
+        <div id="darkBox">
+            <input id="darkSwitch" type="checkbox">
+            <label for="darkSwitch">
+                <div id="darkBall"></div>
+            </label>
+        </div>
+        <a href="#"><button id="footDoGory" class="doZadan">Do góry</button></a>
+        <p>Oliwia Skała | Tomasz Sobczyk | 3CT</p></div>
+
+    <a id="powrot" href="index.html">Powrót</a>
+    <section>
+
+        <div class="zawartosc"> <!-- child 1 -->
+            <h2>WŁAŚCIWOŚCI</h2>
+            <p>Wszystkie właściwości CSS można podzielić na kilka kategorii. Każda z kategorii jest odpowiedzialna za zmianę wyglądu określonego elementu HTML. Wyróżnia się następujące właściwości CSS:</p><br>
+            <ul>
+                <a href="#tekst">
+                    <li class="lista">tekst</li>
+                </a>
+                <a href="#czcionka">
+                    <li class="lista">czcionka</li>
+                </a>
+                <a href="#skalowanie">
+                    <li class="lista">skalowanie</li>
+                </a>
+                <a href="#tło">
+                    <li class="lista">tło</li>
+                </a>
+                <a href="#wykazy">
+                    <li class="lista">wykazy</li>
+                </a>
+                <a href="#obramowanie">
+                    <li class="lista">obramowanie</li>
+                </a>
+                <a href="#tabele">
+                    <li class="lista">tabela</li>
+                </a>
+                <a href="#linki">
+                    <li class="lista">linki</li>
+                </a>
+                <a href="#kursory">
+                    <li class="lista">kursory</li>
+                </a>
+                <a href="#inne">
+                    <li class="lista">INNE WŁAŚCIWOŚCI</li>
+                </a>
+            </ul>
+        </div>
+
+        
+        <hr> <!-- child 2 -->
+
+
+        <div class="zawartosc"> <!-- child 3 -->
+            <h2>WŁAŚCIWOŚCI</h2>
+            <span id="tekst" class="naglowek"><b>TEKST</b></span>
+            <p>właściwości odpowiedzialne za formatowanie cech wyglądu tekstu.</p>
+            <span class="tekstprzez"> (najedź na tekst aby wyświetlić dymek z kodem CSS)</span><br>
+            <a href="#zadTekst"><button class="doZadan">przejdź do zadań</button></a>
+        </div>
+
+        <div class="zawartosc"> <!-- child 4 -->
+            <h2>TEKST</h2>
+            <p><b>color</b> - pozwala na określenie koloru danego tekstu. Kolor czcionki określa się za pomocą nazwy w języku angielskim (np. red), kodu szestnaskowego lub rgb.</p><br><br>
+            <span title="#color1 {
+                color: red;
+            }" id="color1">Tekst 1</span><br>
+            <span title="#color2 {
+                color: #f2710f;
+            }" id="color2">Tekst 2</span>
+        </div>
+
+        <div class="zawartosc"> <!-- child 5 -->
+            <h2>TEKST</h2>
+            <p><b>text-align</b> - definiuje wyrównanie tekstu, domyślnie do lewej; pozostałe wartości tej właściwości to:</p><br> 
+            <div title="#align1 {
+                text-align: left;
+            }" id="align1">left</div>
+            <div title="#align2 {
+                text-align: right;
+            }" id="align2">right</div>
+            <div title="#align3 {
+                text-align: center;
+            }" id="align3">center</div>
+            <div title="#align4 {
+                text-align: justify;
+            }" id="align4">justify</div>
+        </div>
+
+        <div class="zawartosc"> <!-- child 6 -->
+            <h2>TEKST</h2>
+            <p><b>text-decoration</b> - pozwala na dekorację (wyróżnienie) fragmentów tekstu; może przyjmować następujące wartości:</p><br>
+            <span title="#decoration1 {
+                text-decoration: none;
+            }" id="decoration1">none</span><br>
+            <span title="NIE DZIAŁA NA WSZYSTKICH PRZEGLĄDARKACH
+            #decoration2 {
+                text-decoration: blink;
+            }" id="decoration2">blink</span><br>
+            <span title="#decoration3 {
+                text-decoration: underline;
+            }" id="decoration3">underline</span><br>
+            <span title="#decoration4 {
+                text-decoration: line-through;
+            }" id="decoration4">line-through</span><br><br>
+            <p>Ponadto może miec przypisany kolor bądz rodzaj podkreślenia taki jak:</p><br>
+            <span title="#decoration5 {
+                text-decoration: underline red solid;
+            }" id="decoration5">solid</span><br>
+            <span title="#decoration6 {
+                text-decoration: underline dashed;
+            }" id="decoration6">dashed</span><br>
+            <span title="#decoration7 {
+                text-decoration: underline red dotted;
+            }" id="decoration7">dooted</span><br>
+            <span title="#decoration8 {
+                text-decoration: underline red wavy;
+            }" id="decoration8">wavy</span><br>
+            <span title="#decoration9 {
+                text-decoration: underline double;
+            }" id="decoration9">double</span><br>
+        </div>
+
+        <div class="zawartosc"> <!-- child 7 -->
+            <h2>TEKST</h2>
+            <p><b>text-transform</b> - pozwala określić wielkość lier w tekście; ta właściwość może przyjmować następujące wartości:</p><br>
+            <span title="#transform1 {
+                text-transform: none;
+            }" id="transform1">none</span><br>
+            <span title="#transform2 {
+                text-transform: capitalize;
+            }" id="transform2">captilize</span><br>
+            <span title="#transform3 {
+                text-transform: lowercase;
+            }" id="transform3">lowercase</span><br>
+            <span title="#transform4 {
+                text-transform: uppercase;
+            }" id="transform4">uppercase</span><br>
+        </div>
+
+        <div class="zawartosc"> <!-- child 8 -->
+            <h2>TEKST</h2>
+            <p><b>white-space</b> - pozwala określić sposób traktowania przez przeglądarke białych znaków w tekście</p><br>
+            <span title=""><b>normal</b> - wartość domyślna, kilka białych znaków nie może być obok siebie, znak przejścia do nowej lini jest ignorowany, tekst automatycznie zawijany.</span><br>
+            <span title=""><b>pre</b> - kilka białych znaków może zostać wyświetlonych obok siebie, znak przejścia do nowej lini nie jest ignorowany, tekst nie jest automatycznie zawijany.</span><br>
+            <span title=""><b>nowrap</b> - podobnie jak normal, ale tekst nie jest automatycznie zawijany.</span><br>
+            <span title=""><b>pre-wrap</b> - podobnie jak pre, ale tekst jest automatycznie zawijany.</span>
+
+        </div>
+
+        <div class="zawartosc"> <!-- child 9 -->
+            <h2>TEKST</h2>
+            <b>INNE:</b><br>
+            <p><b>text-indent</b> - określa wielkość wcięcia w pierwszym wierszu.</p>
+            <p title="#spacing1 {
+                letter-spacing: 2px;
+            }" id="spacing1"><b>letter-spacing</b> - określa odległość między literami.</p>
+            <p title="#spacing2 {
+                word-spacing: 5px;
+            }" id="spacing2"><b>word-spacing</b> - określa odległość między słowami.</p>
+            <p><b>text-overflow</b> - określa sposób wyświetlania skróconego tekstu.</p>
+            <p><b>line-height</b> - określa wysokość wierszy.</p>
+        </div>
+
+
+
+        <hr> <!-- child 10 -->
+
+
+
+        <div class="zawartosc"> <!-- child 11 -->
+            <h2>WŁAŚCIWOŚCI</h2>
+            <span id="czcionka" class="naglowek"><b>CZCIONKA</b></span>
+            <p>właściwości odpowiedzialne za formatowanie wyglądu czcionki tekstu.</p>
+            <span class="tekstprzez"> (najedź na tekst aby wyświetlić dymek z kodem CSS)</span><br>
+            <a href="#zadCzcionka"><button class="doZadan">przejdź do zadań</button></a>
+        </div>
+
+        <div class="zawartosc"> <!-- child 12 -->
+            <h2>CZCIONKA</h2>
+            <p><b>font-style</b> - służy do określenia dodatkowego stylu czcionki, własność ta może przyjmować następujące wartości:</p><br>
+            <span title="#fStyle1 {
+                font-style: normal;
+            }" id="fStyle1">normal</span><br>
+            <span title="#fStyle2 {
+                font-style: italic;
+            }" id="fStyle2">italic</span><br>
+            <span title="#fStyle3 {
+                font-style: oblique;
+            }" id="fStyle3">oblique</span>
+        </div>
+
+        <div class="zawartosc"> <!-- child 13 -->
+            <h2>CZCIONKA</h2>
+            <p><b>font-family</b> - służy do  określenia rodzaju czcionki, tę wartość określa się według wzorca:</p><br>
+            <span class="script">font-family: nazwa, generic;</span><br><br>
+            <p>Element <b>nazwa</b> określa nazwę czcionki, a element <b>generic</b> określa nazwę rodzaju ogólnego czcionki. Dostępne rodzaje ogólne czcionki:</p><br>
+            <span title="#fFamily1 {
+                font-family: Georgia, serif;
+            }" id="fFamily1">serif</span><br>
+            <span title="#fFamily2 {
+                font-family: Verdana, sans-serif;
+            }" id="fFamily2">sans-serif</span><br>
+            <span title="brak">cursive</span><br>
+            <span title="brak">fantasy</span><br>
+            <span title="#fFamily3 {
+                font-family: Courier New, monospace;
+            }" id="fFamily3">monospace</span>
+        </div>
+
+        <div class="zawartosc"> <!-- child 14 -->
+            <h2>CZCIONKA</h2>
+            <p><b>font-size</b> - służy do określenia rozmiaru czcionki; własność ta może przyjmować następujące wartości:</p><br>
+            <span title="#fSize0 {
+                font-size: 20px;
+                font-size: 100%;
+                font-size: 1em;
+            }" id="fSize0">liczba podana za pomocą pikseli, procentów bądź jednostek em</span><br><br>
+            <span title="#fSize1 {
+                font-size: xx-small;
+            }" id="fSize1">xx-small</span><br>
+            <span title="#fSize2 {
+                font-size: x-small;
+            }" id="fSize2">x-small</span><br>
+            <span title="#fSize3 {
+                font-size: small;
+            }" id="fSize3">small</span><br>
+            <span title="#fSize4 {
+                font-size: medium;
+            }" id="fSize4">medium</span><br>
+            <span title="#fSize5 {
+                font-size: large;
+            }" id="fSize5">large</span><br>
+            <span title="#fSize6 {
+                font-size: x-large;
+            }" id="fSize6">x-large</span><br>
+            <span title="#fSize7 {
+                font-size: xx-large;
+            }" id="fSize7">xx-large</span><br>
+            <span title="#fSize8 {
+                font-size: smaller;
+            }" id="fSize8">smaller</span><br>
+            <span title="#fSize9 {
+                font-size: larger;
+            }" id="fSize9">larger</span><br>
+        </div>
+
+        <div class="zawartosc"> <!-- child 15 -->
+            <h2>CZCIONKA</h2>
+            <p><b>font-weight</b> - służy do określenia grubości tekstu; własność ta może przyjmować określone wartości:</p><br>
+            <span title="" id="fWeight1">normal</span><br>
+            <span title="" id="fWeight2">bold</span><br>
+            <span title="" id="fWeight3">lighter</span><br>
+            <span title="" id="fWeight4">bolder</span><br>
+            <span title="">stopień grubości: 100, 200, 300, 400, 500, <span id="Weight600">600</span>, <span id="Weight700">700</span>, <span id="Weight800">800</span>, <span id="Weight900">900</span></span><br>
+        </div>
+
+        <div class="zawartosc"> <!-- child 16 -->
+            <h2>CZCIONKA</h2>
+            <p><b>font-variant</b> - służy do określenia dodatkowego wariantu czcionki danego tekstu; ta właściwośc może przyjmować określone wartości:</p><br>
+            <span title="
+            #fVariant1 {
+                font-variant: normal;
+            }" id="fVariant1">normal</span><br>
+            <span title="#fVariant2 {
+                font-variant: small-caps;
+            }" id="fVariant2">small-caps</span><br>
+        </div>
+
+        <div class="zawartosc"> <!-- child 17 -->
+            <h2>CZCIONKA</h2>
+            <p>Za pomocą właściwości <b>font</b> można określić kilka róznych cech czcionki wybranego tekstu. Przykład:</p><br>
+            <span title="#fFont {
+                font: italic small-caps bold 16px Verdana, sans-serif;
+            }" id="fFont">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span><br>
+            <span class="tekstprzez"> (najedź na tekst aby wyświetlić dymek z kodem CSS)</span>
+
+        </div>
+
+        
+
+
+
+        <hr> <!-- child 18 -->
+
+
+
+        <div class="zawartosc"> <!-- child 19 -->
+            <h2>WŁAŚCIWOŚCI</h2>
+            <span id="skalowanie" class="naglowek"><b>SKALOWANIE</b></span>
+            <p>właściwości odpowiedzialne za formatowanie szerokości i wysokości elementu.</p>
+            <span class="tekstprzez"> (najedź na element aby wyświetlić dymek z kodem CSS)</span><br>
+            <a href="#zadSkalowanie"><button class="doZadan">przejdź do zadań</button></a>
+        </div>
+
+        <div class="zawartosc"> <!-- child 20 -->
+            <h2>SKALOWANIE</h2>
+            <p><b>width</b> - służy do określenia szerokości wybranego elementu</p><br>
+            <p><b>height</b> - służy do określenia wysokości wybranego elementu</p><br>
+            <p>(element może być mniejszy oraz większy np. na innych urządzeniach)</p><br>
+            <div title="#skalowanie1 {
+                width: 50px;
+                height: 50px;
+                background-color: red;
+            }" id="skalowanie1"></div><br>
+        </div>
+
+        <div class="zawartosc"> <!-- child 21 -->
+            <h2>SKALOWANIE</h2>
+            <p><b>min-width</b> - służy do określenia minimalnej szerokości wybranego elementu</p><br>
+            <p><b>min-height</b> - służy do określenia minimalnej wysokości wybranego elementu</p><br>
+            <p>(element nie może być mniejszy od podanej wartości)</p><br>
+            <div title="#skalowanie2 {
+                min-width: 75px;
+                min-height: 75px;
+                background-color: blue;
+            }" id="skalowanie2"></div><br>
+        </div>
+
+        <div class="zawartosc"> <!-- child 22 -->
+            <h2>SKALOWANIE</h2>
+            <p><b>max-width</b> - służy do określenia maksymalnej szerokości wybranego elementu</p><br>
+            <p><b>max-height</b> - służy do określenia maksymalnej wysokości wybranego elementu</p><br>
+            <p>(element nie może być większy od podanej wartości)</p><br>
+            <div title="#skalowanie3 {
+                width: 50px;
+                height: 50px;
+                max-width: 60px;
+                max-height: 60px;
+                background-color: green;
+            }" id="skalowanie3"></div><br>
+        </div>
+
+
+
+        <hr> <!-- child 23 -->
+
+
+
+
+        <div class="zawartosc"> <!-- child 24 -->
+            <h2>WŁAŚCIWOŚCI</h2>
+            <span id="tło" class="naglowek"><b>TŁO</b></span>
+            <p>właściwości odpowiedzialne za formatowanie cech wyglądu tła w danym elemencie.</p>
+            <span class="tekstprzez"> (najedź na element aby wyświetlić dymek z kodem CSS)</span><br>
+            <a href="#zadTlo"><button class="doZadan">przejdź do zadań</button></a>
+        </div>
+
+        <div class="zawartosc"> <!-- child 25 -->
+            <h2>TŁO</h2>
+            <p><b>background-color</b> - służy do określenia koloru tła; kolory można określić za pomocą:</p><br>
+            <p>- <b>nazwy w języku angielskim</b> - np. red;</p><br>
+            <p>- <b>zapisu szesnastkowego</b> - np. #CCDD33;</p><br>
+            <p>- <b>zapisu kolorów w rgb</b> - np. rgb (12, 23,);</p><br>
+            <div id="bloczek1">
+                <div title="#podbloczek1-1 {
+                    width: 50%;
+                    height: 50%;
+                    float: left;
+                    background-color: red;
+                }" id="podbloczek1-1">red</div>
+                <div title="#podbloczek1-2 {
+                    width: 50%;
+                    height: 50%;
+                    float: left;
+                    background-color: #CCDD33;
+                }" id="podbloczek1-2">#CCDD33</div>
+                <div title="#podbloczek1-3 {
+                    width: 50%;
+                    height: 50%;
+                    float: left;
+                    background-color: rgb(12, 23, 45);
+                }" id="podbloczek1-3">rgb()</div>
+                <div title="#podbloczek1-4 {
+                    width: 50%;
+                    height: 50%;
+                    float: left;
+                    background-color: rgba(32, 64, 12, 1);
+                }" id="podbloczek1-4">rgba()</div>
+            </div><br>
+            <span class="tekstprzez"> (najedź na kwadrat aby wyświetlić dymek z kodem CSS)</span>
+        </div>
+
+        <div class="zawartosc"> <!-- child 26 -->
+            <h2>TŁO</h2>
+            <p><b>background-image</b> - służy do określenia grafiki jako tła wybranego elementu; ta własność może przyjmować następujące wartości:</p><br>
+            <p>- <b>none</b> - wartość domyślna, brak grafiki w tle;</p>
+            <p>- <b>url ()</b> - służy do określenia nazwy pliku z którego ma zostać utworzone tło;</p>
+            <p>- <b>linear-gradient()</b> - tworzy gradient liniowy jako tło;</p>
+            <p>- <b>repeating-linear-gradient()</b> - tworzy powtarzający się gradient liniowy jako tło;</p>
+            <p>- <b>radial-gradient()</b> -  tworzy gradient promienisty jako tło;</p>
+            <p>- <b>repeating-radial-gradient</b> - tworzy powtarzający się gradient promienisty;</p><br>
+            <div id="bloczek2">
+                <div title="#podbloczek2-1 {
+                    width: 50%;
+                    height: 50%;
+                    float: left;
+                    background-image: none;
+                }" id="podbloczek2-1">none</div>
+                <div title="#podbloczek2-2 {
+                    width: 50%;
+                    height: 50%;
+                    float: left;
+                    background-image: url(../obrazki/wlasciwosci/forest.jpg);
+                    background-size: 120%;
+                }" id="podbloczek2-2">url()</div>
+                <div title="#podbloczek2-3 {
+                    width: 50%;
+                    height: 50%;
+                    float: left;
+                    background-image: linear-gradient(red, orange);
+                }" id="podbloczek2-3">linear-gradient()</div>
+                <div title="#podbloczek2-4 {
+                    width: 50%;
+                    height: 50%;
+                    float: left;
+                    background-image: radial-gradient(lightgreen, lightblue);
+                }" id="podbloczek2-4">radial-gradient()</div>
+            </div><br>
+            <span class="tekstprzez"> (najedź na kwadrat aby wyświetlić dymek z kodem CSS)</span>
+        </div>
+
+        <div class="zawartosc"> <!-- child 27 -->
+            <h2>TŁO</h2>
+            <p><b>background-repeat</b> - służy do określenia sposobu powtarzania się tła obrazkowego; ta własność może przyjmować następujące wartości:</p><br>
+            <p>- <b>repeat</b> - wartość domyślna, tło jest powtarzane w pionie i poziomie;</p>
+            <p>- <b>repeat-x</b> - tło jest powtarzane tylko w poziomie;</p>
+            <p>- <b>repeat-y</b> - tło jest powtarzane tylko w pionie;</p>
+            <p>- <b>no-repeat</b> - tło nie jest powtarzane;</p>
+            <p>- <b>round</b> - tło jest powtarzane w pionie i poziomie oraz jest zeskalowane aby wypełnić cały obszar elementu;</p>
+            <p>- <b>space</b> - tło jest powtarzane w pionie i poziomie oraz zostanie rozmieszczone bez skalowania tak aby wypełnić cały obszar elementu;</p>
+            <div id="bloczek3">
+                <div title="#podbloczek3-1 {
+                    border: solid white;
+                    width: 50%;
+                    height: 33%;
+                    float: left;
+                    background-image: url(../obrazki/wlasciwosci/forest.jpg);
+                    background-size: 25%;
+                    background-repeat: repeat;
+                }" id="podbloczek3-1">repeat</div>
+                <div title="#podbloczek3-2 {
+                    border: solid white;
+                    width: 50%;
+                    height: 33%;
+                    float: left;
+                    background-image: url(../obrazki/wlasciwosci/forest.jpg);
+                    background-size: 25%;
+                    background-repeat: repeat-x;
+                }" id="podbloczek3-2">repeat-x</div>
+                <div title="#podbloczek3-3 {
+                    border: solid white;
+                    width: 50%;
+                    height: 33%;
+                    float: left;
+                    background-image: url(../obrazki/wlasciwosci/forest.jpg);
+                    background-size: 25%;
+                    background-repeat: repeat-y;
+                }" id="podbloczek3-3">repeat-y</div>
+                <div title="#podbloczek3-4 {
+                    border: solid white;
+                    width: 50%;
+                    height: 33%;
+                    float: left;
+                    background-image: url(../obrazki/wlasciwosci/forest.jpg);
+                    background-size: 25%;
+                    background-repeat: no-repeat;
+                }" id="podbloczek3-4">no-repeat</div>
+                <div title="#podbloczek3-5 {
+                    border: solid white;
+                    width: 50%;
+                    height: 33%;
+                    float: left;
+                    background-image: url(../obrazki/wlasciwosci/forest.jpg);
+                    background-repeat: round;
+                }" id="podbloczek3-5">round</div>
+                <div title="#podbloczek3-6 {
+                    border: solid white;
+                    width: 50%;
+                    height: 33%;
+                    float: left;
+                    background-image: url(../obrazki/wlasciwosci/forest.jpg);
+                    background-size: 25%;
+                    background-repeat: space;
+                }" id="podbloczek3-6">space</div>
+            </div><br>
+            <span class="tekstprzez"> (najedź na kwadrat aby wyświetlić dymek z kodem CSS)</span>
+
+        </div>
+
+                <div class="zawartosc"> <!-- child 28 -->
+            <h2>TŁO</h2>
+            <p><b>background-position</b> - służy do określenia pozycji początkowej tła obrazkowego względem krawędzi elementu. Pozycję tła można określić w pikselach, procentach lub używając jednej z nazw wartości:</p><br>
+            <p>- <b>right</b></p>
+            <p>- <b>left</b></p>
+            <p>- <b>bottom</b></p>
+            <p>- <b>top</b></p>
+            <div id="bloczek4">
+                <div title="#podbloczek4-1 {
+                    border: solid white;
+                    width: 50%;
+                    height: 33%;
+                    float: left;
+                    background-image: url(../obrazki/wlasciwosci/forest.jpg);
+                    background-size: 50%;
+                    background-repeat: no-repeat;
+                    background-position: right;
+                }" id="podbloczek4-1">right</div>
+                <div title="#podbloczek4-2 {
+                    border: solid white;
+                    width: 50%;
+                    height: 33%;
+                    float: left;
+                    background-image: url(../obrazki/wlasciwosci/forest.jpg);
+                    background-size: 50%;
+                    background-repeat: no-repeat;
+                    background-position: left;
+                }" id="podbloczek4-2">left</div>
+                <div title="#podbloczek4-3 {
+                    border: solid white;
+                    width: 50%;
+                    height: 33%;
+                    float: left;
+                    background-image: url(../obrazki/wlasciwosci/forest.jpg);
+                    background-size: 50%;
+                    background-repeat: no-repeat;
+                    background-position: bottom;
+                }" id="podbloczek4-3">bottom</div>
+                <div title="#podbloczek4-4 {
+                    border: solid white;
+                    width: 50%;
+                    height: 33%;
+                    float: left;
+                    background-image: url(../obrazki/wlasciwosci/forest.jpg);
+                    background-size: 50%;
+                    background-repeat: no-repeat;
+                    background-position: top;
+                }" id="podbloczek4-4">top</div>
+                <div title="#podbloczek4-5 {
+                    border: solid white;
+                    width: 100%;
+                    height: 33%;
+                    float: left;
+                    background-image: url(../obrazki/wlasciwosci/forest.jpg);
+                    background-size: 25%;
+                    background-repeat: no-repeat;
+                    background-position: 100px;
+                }" id="podbloczek4-5">piksele</div>
+            </div><br>
+            <span class="tekstprzez"> (najedź na kwadrat aby wyświetlić dymek z kodem CSS)</span>
+
+        </div>
+
+        
+
+
+
+
+        <hr> <!-- child 29 -->
+
+
+        <div class="zawartosc"> <!-- child 30 -->
+            <h2>WŁAŚCIWOŚCI</h2>
+            <span id="wykazy" class="naglowek"><b>WYKAZY</b></span>
+            <p>właściwości formatujące listy.</p>
+            <span class="tekstprzez"> (najedź na element aby wyświetlić dymek z kodem CSS)</span><br>
+            <a href="#zadWykazy"><button class="doZadan">przejdź do zadań</button></a>
+        </div>
+
+        <div class="zawartosc"> <!-- child 31 -->
+            <h2>WYKAZY</h2>
+            <p><b>list-style-type</b> - służy do określenia typu punktora listy; ta własność może przyjmować bardzo wiele wartości, oto niektóre z nich:</p><br>
+            <ul>
+                <li title="#lista1{
+                    list-style-type: disc;
+                }" id="lista1">disc</li>
+                <li title="#lista2{
+                    list-style-type: circle;
+                }" id="lista2">circle</li>
+                <li title="#lista3{
+                    list-style-type: square;
+                }" id="lista3">square</li>
+                <li title="#lista4{
+                    list-style-type: disclosure-closed;
+                }" id="lista4">disclosure-closed</li>
+                <li title="#lista5{
+                    list-style-type: none;
+                }" id="lista5">none</li>
+                <li title="#lista6{
+                    list-style-type: decimal;
+                }" id="lista6">decimal</li>
+                <li title="#lista7{
+                    list-style-type: lower-roman;
+                }" id="lista7">lower-roman</li>
+                <li title="#lista8{
+                    list-style-type: upper-roman; 
+                }" id="lista8">upper-roman</li>
+                <li title="#lista9{
+                    list-style-type: lower-alpha;
+                }" id="lista9">lower-alpha, lower-latin</li>
+                <li title="#lista10{
+                    list-style-type: upper-latin;
+                }" id="lista10">upper-alpha, upper-latin</li>
+                <li title="#lista11{
+                    list-style-type: lower-greek;
+                }" id="lista11">lower-greek</li>
+            </ul>
+        </div>
+
+        <div class="zawartosc"> <!-- child 32 -->
+            <h2>WYKAZY</h2>
+            <p><b>list-style-image</b> - służy do określenia typu punktora w postaci obrazka; aby wstawić punktor będący grafiką, należy zastosować funkcję url().</p><br>
+            <ul>
+                <li title="#lista-1{
+                    list-style-image: url(../obrazki/wlasciwosci/checked.png);
+                }" id="lista-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+            </ul>
+        </div>
+
+        <div class="zawartosc"> <!-- child 33 -->
+            <h2>WYKAZY</h2>
+            <p><b>list-style-position</b> - służy do określenia pozycji punktora; ta własność może przyjmować następujące wartości:</p><br>
+            <ul>
+                <li title="#position1{
+                    list-style-position: outside;
+                }" id="position1">outside</li>
+                <li title="#position2{
+                    list-style-position: inside;
+                }" id="position2">inside</li>
+            </ul>
+        </div>
+        
+
+
+        <hr> <!-- child 34 -->
+
+        <div class="zawartosc"> <!-- child 35 -->
+            <h2>WŁAŚCIWOŚCI</h2>
+            <span id="obramowanie" class="naglowek"><b>OBRAMOWANIE</b></span>
+            <p>właściwości odpowiedzialne za formatowanie cech wyglądu obramowania danego elementu.</p>
+            <span class="tekstprzez"> (najedź na element aby wyświetlić dymek z kodem CSS)</span><br>
+            <a href="#zadObramowanie"><button class="doZadan">przejdź do zadań</button></a>
+        </div>
+
+        <div class="zawartosc"> <!-- child 36 -->
+            <h2>OBRAMOWANIE</h2>
+            <p><b>border-width</b> - służy do określenia grubości obramowania.</p><br>
+            <div title="#border5 {
+                border: solid white;
+                border-width: 3px 5px 7px 10px;
+            }" id="border5">border-width</div><br>
+            <p>Ta właściwość pozwala jednocześnie określić grubość krawędzi dolnej, górnej, lewej i prawej za pomocą:</p><br>
+            <div title="#border1 {
+                border: solid white;
+                border-bottom-width: 10px;
+            }" id="border1">border-bottom-width</div><br>
+            <div title="#border2 {
+                border: solid white;
+                border-top-width: 10px;
+            }" id="border2">border-top-width</div><br>
+            <div title="#border3 {
+                border: solid white;
+                border-left-width: 10px;
+            }" id="border3">border-left-width</div><br>
+            <div title="#border4 {
+                border: solid white;
+                border-right-width: 10px;
+            }" id="border4">border-right-width</div><br>
+
+        </div>
+
+        <div class="zawartosc"> <!-- child 37 -->
+            <h2>OBRAMOWANIE</h2>
+            <p><b>border-style</b> - służy do określenia stylu obramowania; ta właściwość może przyjmować następujące wartości:</p><br>
+            <div title="#bStyle1 {
+                border: white;
+                border-style: solid;
+            }" id="bStyle1">solid</div><br>
+            <div title="#bStyle2 {
+                border: white;
+                border-style: double;
+            }" id="bStyle2">double</div><br>
+            <div title="#bStyle3 {
+                border: white;
+                border-style: dotted;
+            }" id="bStyle3">dotted</div><br>
+            <div title="#bStyle4 {
+                border: white;
+                border-style: dashed;
+            }" id="bStyle4">dashed</div><br>
+            <div title="#bStyle5 {
+                border: white;
+                border-style: groove;
+            }" id="bStyle5">groove</div><br>
+            <div title="#bStyle6 {
+                border: white;
+                border-style: ridge;
+            }" id="bStyle6">ridge</div><br>
+            <div title="#bStyle7 {
+                border: white;
+                border-style: inset;
+            }" id="bStyle7">inset</div><br>
+            <div title="#bStyle8 {
+                border: white;
+                border-style: outset;
+            }" id="bStyle8">outset</div><br>
+            <p>Tak jak w poprzedniej własności, można ustawić styl krawędzi dla poszególnych boków (np. border-left-style) </p>
+
+        </div>
+
+        <div class="zawartosc"> <!-- child 38 -->
+            <h2>OBRAMOWANIE</h2>
+            <p><b>border-color</b> - służy do określenia koloru obramowania.</p><br>
+            <div title="#bColor1 {
+                border: solid;
+                border-color: red;
+            }" id="bColor1">border-color: red;</div><br>
+            <div title="#bColor2 {
+                border: solid;
+                border-color: #9900ff;
+            }" id="bColor2">border-color: #9900FF;</div><br>
+        </div>
+
+        <div class="zawartosc"> <!-- child 39 -->
+            <h2>OBRAMOWANIE</h2>
+            <p><b>border-radius</b> - służy do określenia rozmiaru zaokrąglenia rogów obramowania danego obszaru. Grupa wartości tej własności może składać się z jednego do ośmiu różnych wartości.</p><br>
+            <div title="" id="bRadius1">10px;</div><br>
+            <div title="" id="bRadius2">10px 20px 7px 8px;</div><br>
+            <div title="" id="bRadius3">5px 8px 10px 10px /15px 15px 15px 15px;</div><br>
+        </div>
+
+        <div class="zawartosc"> <!-- child 40 -->
+            <h2>OBRAMOWANIE</h2>
+            <p><b>border-image</b> - służy do określenia cech obramowania obrazkowego. Za jego pomocą można określić następujące wartości:</p><br>
+            <ul>
+                <li><b>source</b> - plik, za pomocą którego tworzy się obramowanie</li>
+                <li><b>width</b> - szerokość obramowania</li>
+                <li><b>outset</b> - określa odległość obramowania od krawędzi</li>
+                <li><b>repeat</b> - określa sposób powtarzania sie obramowania obrazkowego; może przyjmować wartości: strech, repeat, round, space</li>
+                <li><b>slice</b> - określa, w jaki sposób obrazek ma zostać podzielony</li>
+            </ul><br>
+            <p>Przykład:</p><br>
+            <div title="#bImage1 {
+                border: solid 10px;
+                border-image: url(../obrazki/wlasciwosci/border.png) 40 / 100px / 10px round;
+            }" id="bImage1">Obramowanie za pomocą obrazka</div><br>
+
+            <span class="tekstprzez"> (najedź na tekst aby wyświetlić dymek z kodem CSS)</span><br>
+
+        </div>
+
+
+        <hr> <!-- child  41-->
+
+        <div class="zawartosc"> <!-- child 42 -->
+            <h2>WŁAŚCIWOŚCI</h2>
+            <span id="tabele" class="naglowek"><b>TABELA</b></span>
+            <p>właściwości formatujące cechy komórek tabeli.</p>
+            <span class="tekstprzez"> (najedź na element aby wyświetlić dymek z kodem CSS)</span><br>
+            <a href="#zadTabela"><button class="doZadan">przejdź do zadań</button></a>
+        </div>
+
+        <div class="zawartosc"> <!-- child 43 -->
+            <h2>TABELA</h2>
+            <p>Większość z podanych właściwości była już wcześniej omówiona, ale można je zastosować również w tabelach:</p><br>
+            <ul>
+                <li><b>border</b> - służy do stworzenia obramowania elementów tabeli</li>
+                <li><b>padding</b></li>
+                <li><b>border-spacing</b> - służy do określenia szerokości między komórkami</li>
+                <li><b>caption-side</b> - określa położenie nagłowka tabeli: <b>top</b> lub <b>bottom</b></li>
+                <li><b>border-collapse</b> - służy do połączenia ze sobą komórek</li>
+                <li><b>background-color</b></li>
+                <li><b>text-align</b></li>
+                <li><b>vertical-align</b> - wyrównanie tekstu w pionie: <b>middle</b>, <b>bottom</b>, <b>top</b></li>
+                <li><b>width</b></li>
+                <li><b>height</b></li>
+            </ul>
+            <p>Przykładowa tabela:</p><br>
+            <table title="table {
+                width: 400px;
+                height: 300px;
+                border: solid #ffe6ff 10px;
+                caption-side: top;
+                border-collapse: collapse;
+                color: #000;
+                font-weight: 600;
+                background-color: #ffb3ff;
+            }
+            
+            td {
+                border: solid grey 1px;
+                text-align: center;
+                vertical-align: middle;
+            
+            }">
+                <caption>Przykładowa tabela</caption>
+                <tr>
+                    <td>Miasto</td>
+                    <td>Liczba ludności</td>
+                </tr>
+                <tr>
+                    <td>Wrocław</td>
+                    <td>630,000</td>
+                </tr>
+                <tr>
+                    <td>Warszawa</td>
+                    <td>1,700,000</td>
+                </tr>
+
+            </table><br>
+
+
+            <span class="tekstprzez"> (najedź na tabele aby wyświetlić dymek z kodem CSS)</span><br>
+        </div>
+
+        <hr> <!-- child 44 -->
+
+        <div class="zawartosc"> <!-- child 45 -->
+            <h2>WŁAŚCIWOŚCI</h2>
+            <span id="linki" class="naglowek"><b>LINKI</b></span>
+            <p>właściwości formatujące odsyłacze.</p>
+            <span class="tekstprzez"> (najedź na element aby wyświetlić dymek z kodem CSS)</span><br>
+            <a href="#zadLinki"><button class="doZadan">przejdź do zadań</button></a>
+        </div>
+
+        <div class="zawartosc"> <!-- child 46 -->
+            <h2>LINKI</h2>
+            <p>Aby określić wygląd odsyłaczy, najpierw musimy znać jego stan czyli czy link jest np. odwiedzony, aktywny. Do określania tych stanów używamy tzn. pseudoklas. Pseudoklasy stosuje się w następujący sposób:</p><br>
+            
+                <p id="linkacze">
+                    <b>- Link podstawowy</b> - a:link<br>
+                    <b>- Link odwiedzony</b> - a:visited<br>
+                    <b>- Link nad którym znajduje się kursor myszy</b> - a:hover<br>
+                    <b>- Link na którym ustawiony jest fokus, np. za pomocą tabulatora</b> - a:focus<br>
+                    <b>- Link aktywny</b> - a:active<br><br>
+                    <a title="
+a {
+                        padding: 10px 10px;
+                        background-color: #ff4d4d;
+                    }
+
+a:visited {
+                        background-color: red;
+                    }
+
+a:hover {
+                        background-color: black;
+                    }
+
+a:focus {
+                        background-color: blue;
+                    }
+
+a:active {
+                        background-color: white;
+                        color: black;
+                    }" href="#linkacze">Przejdź do strony!</a><br><br>
+                </p>
+
+           
+
+            <span class="tekstprzez"> (najedź na tekst aby wyświetlić dymek z kodem CSS)</span><br>
+        </div>
+
+        <hr> <!-- child 47 -->
+
+
+        <div class="zawartosc"> <!-- child 48 -->
+            <h2>WŁAŚCIWOŚCI</h2>
+            <span id="kursory" class="naglowek"><b>KURSORY</b></span>
+            <p>określanie wyglądu kursora</p>
+            <span class="tekstprzez"> (najedź na element aby wyświetlić dymek z kodem CSS)</span><br>
+            <a href="#zadKursory"><button class="doZadan">przejdź do zadań</button></a>
+        </div>
+
+        <div class="zawartosc"> <!-- child 49 -->
+            <h2>KURSORY</h2>
+            <p>Za pomocą właściwości <b>cursor</b> można określić typ kursora danego elementu. Własność ta może przyjmować następujące wartości:</p><br>
+
+             <div title="#kursor1 {
+                cursor: auto;
+            }" id="kursor1">auto</div>
+             <div title="#kursor2 {
+                cursor: pointer;
+            }" id="kursor2">pointer</div>
+             <div title="#kursor3 {
+                cursor: progress;
+            }" id="kursor3">progress</div>
+             <div title="#kursor4 {
+                cursor: crosshair;
+            }" id="kursor4">crosshair</div>
+             <div title="#kursor5 {
+                cursor: move;
+            }" id="kursor5">move</div>
+             <div title="#kursor6 {
+                cursor: help;
+            }" id="kursor6">help</div>
+             <div title="#kursor7 {
+                cursor: text;
+            }" id="kursor7">text</div>
+             <div title="#kursor8 {
+                cursor: vertical-text;
+            }" id="kursor8">vertical-text</div>
+            <div title="#kursor9 {
+                cursor: not-allowed;
+            }" id="kursor9">not-allowed</div><br>
+
+            <p>Wartości właściwości <b>cursor</b> jest znacznie więcej.</p><br>
+        
+            <span class="tekstprzez"> (najedź na tekst aby wyświetlić dymek z kodem CSS)</span><br>
+        </div>
+
+        <hr> <!-- child 50 -->
+
+        <div class="zawartosc"> <!-- child 51 -->
+            <h2>WŁAŚCIWOŚCI</h2>
+            <span id="inne" class="naglowek"><b>INNE PRZYDATNE WŁAŚCIWOŚCI</b></span>
+            <span class="tekstprzez"> (najedź na obiekty aby wyświetlić dymek z kodem CSS)</span><br>
+            <a href="#zadInne"><button class="doZadan">przejdź do zadań</button></a>
+        </div>
+
+        <div class="zawartosc"> <!-- child 52 -->
+            <h2 class="temat">OPACITY</h2>
+            <p>Właściwością <b>opacity</b> można okreslić przezroczystość wybranego obszaru strony. Własność ta przyjmuje wartości od 0 do 1.</p><br>
+
+                 <div id="blokulec">
+                     <div title="#opacity1{
+                        width: 50px;
+                        height: 50px;
+                        background-color: #fff;
+                        color: #000;
+                        opacity: 1;
+                    }" id="opacity1">1;</div>
+                     <div title="#opacity2{
+                        width: 50px;
+                        height: 50px;
+                        background-color: #fff;
+                        color: #000;
+                        opacity: 0.5;
+                    }" id="opacity2">0.5;</div>
+                     <div title="#opacity3{
+                        width: 50px;
+                        height: 50px;
+                        background-color: #fff;
+                        color: #000;
+                        opacity: 0.2;
+                    }" id="opacity3">0.2;</div>
+                 </div><br>
+
+            <span class="tekstprzez"> (najedź na element aby wyświetlić dymek z kodem CSS)</span><br>
+        </div>
+
+        <div class="zawartosc"> <!-- child 53 -->
+            <h2 class="temat">FILTER</h2>
+            <p>Właściwością <b>filter</b> można zmienić kolorystykę wybranego obszaru strony. Może przyjmować następujące wartości:</p>
+
+            <span class="tekstprzez">(w nawiasy wpisujemy wartość filtra np. 80%)</span><br><br>
+
+            <p>
+                none<br>
+                <img title="#fObrazek0 {
+                    filter: none;
+                }" id="fObrazek0" class="fObrazek" src="obrazki/wlasciwosci/forest.jpg">
+            </p><br><br>
+            <p>
+                grayscale()<br>
+                <img title="#fObrazek1 {
+                    filter: grayscale(100%);
+                }" id="fObrazek1" class="fObrazek" src="obrazki/wlasciwosci/forest.jpg">
+            </p><br><br>
+            <p>
+                sepia()<br>
+                <img title="#fObrazek2 {
+                    filter: sepia(80%);
+                }" id="fObrazek2" class="fObrazek" src="obrazki/wlasciwosci/forest.jpg">
+            </p><br><br>
+            <p>
+                saturate()<br>
+                <img title="#fObrazek3 {
+                    filter: saturate(50%);
+                }" id="fObrazek3" class="fObrazek" src="obrazki/wlasciwosci/forest.jpg">
+            </p><br><br>
+            <p>
+                hue-rotation()<br>
+                <img title="#fObrazek4 {
+                    filter: hue-rotate(180deg);
+                }" id="fObrazek4" class="fObrazek" src="obrazki/wlasciwosci/forest.jpg">
+            </p><br><br>
+            <p>
+                invert()<br>
+                <img title="#fObrazek5 {
+                    filter: invert(100%);
+                }" id="fObrazek5" class="fObrazek" src="obrazki/wlasciwosci/forest.jpg">
+            </p><br><br>
+            <p>
+                brightness()<br>
+                <img title="#fObrazek6 {
+                    filter: brightness(50%);
+                }" id="fObrazek6" class="fObrazek" src="obrazki/wlasciwosci/forest.jpg">
+            </p><br><br>
+            <p>
+                contrast()<br>
+                <img title="#fObrazek7 {
+                    filter: contrast(50%);
+                }" id="fObrazek7" class="fObrazek" src="obrazki/wlasciwosci/forest.jpg">
+            </p><br><br>
+            <p>
+                blur()<br>
+                <img title="#fObrazek8 {
+                    filter: blur(2px);
+                }" id="fObrazek8" class="fObrazek" src="obrazki/wlasciwosci/forest.jpg">
+            </p><br><br>
+            <p>
+                opacity()<br>
+                <img title="#fObrazek9 {
+                    filter: opacity(20%);
+                }" id="fObrazek9" class="fObrazek" src="obrazki/wlasciwosci/forest.jpg">
+            </p><br><br>
+            <p>
+                drop-shadow()<br>
+                <img title="#fObrazek10 {
+                    filter: drop-shadow(10px 10px 10px black);
+                }" id="fObrazek10" class="fObrazek" src="obrazki/wlasciwosci/forest.jpg">
+            </p><br><br>
+
+
+            <span class="tekstprzez"> (najedź na obrazek aby wyświetlić dymek z kodem CSS)</span><br>
+        </div>
+
+        <div class="zawartosc"> <!-- child 54 -->
+            <h2 class="temat">DISPLAY</h2>
+            <p>Przed omówieniem właściwości <b>display</b> przypomne dwa znaczniki, <b>&ltdiv></b> i <b>&ltspan></b>. Pierwszyt z nich tworzy elementy <b>blokowe</b>, a drugi <b>liniowe</b>. Każdy element blokowy zajmuje 100% szerokości i każdy następny umieszczany jest pod spodem. Elementy liniowe umieszcza się obok siebie, ale nie można modyfikować ich szerokości, wysokości ani marginesów.<br> Właściwość <b>display</b> może zmienić sposób w jaki element wyświetla się na stronie. Przyjmuje następujące wartości:</p><br>
+            <p><b>none</b> - obiekt jest ukryty</p>
+            <div class="blokulec1">
+                <div title="#display1 {
+                    display: none;
+                    margin: 5px;
+                    width: 75px;
+                    height: 75px;
+                    background-color: red;
+                }" id="display1"></div>
+            </div><br>
+
+            <p><b>inline</b> - wyświetla obiekt jako liniowy</p>
+            <div class="blokulec1">
+                <div title="#display2 {
+                    display: inline;
+                    margin: 5px;
+                    width: 75px;
+                    height: 75px;
+                    background-color: red;
+                }" id="display2">blok1</div>
+                <div title="#display2 {
+                    display: inline;
+                    margin: 5px;
+                    width: 75px;
+                    height: 75px;
+                    background-color: red;
+                }" id="display2">blok2</div>
+            </div><br>
+
+            <p><b>block</b> - wyświetla obiekt jako blokowy</p>
+            <div class="blokulec2">
+                <div title="#display3 {
+                    display: block;
+                    margin: 5px;
+                    width: 75px;
+                    height: 75px;
+                    background-color: red;
+                }" id="display3">blok1</div>
+                <div title="#display3 {
+                    display: block;
+                    margin: 5px;
+                    width: 75px;
+                    height: 75px;
+                    background-color: red;
+                }" id="display3">blok2</div>
+            </div><br>
+
+            <p><b>inline-block</b> - pozwala połączyć cechy obu elementów, czyli można określić szerokość, wysokość oraz marginesy i nie nastąpi po nim przejście do nowej lini</p>
+            <div class="blokulec2">
+                <div title="#display4 {
+                    display: inline-block;
+                    margin: 5px;
+                    width: 75px;
+                    height: 75px;
+                    background-color: red;
+                }" id="display4">blok1</div>
+                <div title="#display4 {
+                    display: inline-block;
+                    margin: 5px;
+                    width: 75px;
+                    height: 75px;
+                    background-color: red;
+                }" id="display4">blok2</div>
+            </div>
+
+            
+
+            <span class="tekstprzez"> (najedź na element aby wyświetlić dymek z kodem CSS)</span><br>
+        </div>
+
+        <div class="zawartosc"> <!-- child 55 -->
+            <h2 class="temat">OVERFLOW</h2>
+            <p>Właściwości <b>overflow</b> pozwala zarządzać treścią która wychodzi poza pewien obszar na stronie. Przyjmuje następujące wartości:</p><br>
+
+            <p><b>visible</b> - wartość domyślna, treść która wychodzi za obszar będzie widoczna.
+                <div title="#overflow1 {
+                    color: #000;
+                    overflow: visible;
+                }" id="overflow1" class="blokulec1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at molestie justo. Nulla ut risus velit. Quisque quis rhoncus elit, eu tempus lectus. Aliquam sagittis id sem ut vestibulum. </div>
+            </p><br><br><br>
+
+            <p><b>hidden</b> - treść która wychodzi za obszar nie będzie widoczna.
+                <div title="#overflow2 {
+                    color: #000;
+                    overflow: hidden;
+                }" id="overflow2" class="blokulec1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at molestie justo. Nulla ut risus velit. Quisque quis rhoncus elit, eu tempus lectus. Aliquam sagittis id sem ut vestibulum. </div>
+            </p><br><br>
+
+            <p><b>scroll</b> - doda suwak który umożliwia przewijanie tręści wychodzącej poza obszar.
+                <div title="#overflow3 {
+                    color: #000;
+                    overflow: scroll;
+                }" id="overflow3" class="blokulec1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at molestie justo. Nulla ut risus velit. Quisque quis rhoncus elit, eu tempus lectus. Aliquam sagittis id sem ut vestibulum. </div>
+            </p><br><br>
+
+            <p><b>auto</b> - pozwala na dodanie suwaków, gdy będzie to konieczne.
+                <div title="#overflow4 {
+                    color: #000;
+                    overflow: auto;
+                }" id="overflow4" class="blokulec1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at molestie justo. Nulla ut risus velit. Quisque quis rhoncus elit, eu tempus lectus. Aliquam sagittis id sem ut vestibulum. </div>
+            </p><br>
+
+      <span class="tekstprzez"> (najedź na element aby wyświetlić dymek z kodem CSS)</span><br>
+        </div>
+
+        <div class="zawartosc"> <!-- child 56 -->
+            <h2 class="temat">FLOAT i CLEAR</h2>
+            <p>Właściwości <b>float</b> umożliwia zdefiniowanie sposobu otaczania elementów. Może przyjmowac wartości:</p><br>
+
+            <p><b>left</b>
+                <div class="blokulec1">
+                    <div title="#float1 {
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px;
+                        background-color: blue;
+                        float: left;
+                    }" id="float1"></div>
+                    <div title="#float1 {
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px;
+                        background-color: blue;
+                        float: left;
+                    }" id="float1"></div>
+                </div>
+            </p> <br>
+
+            <p><b>right</b>
+                <div class="blokulec1">
+                    <div title="#float2 {
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px;
+                        background-color: blue;
+                        float: right;
+                    }" id="float2"></div>
+                    <div title="#float2 {
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px;
+                        background-color: blue;
+                        float: right;
+                    }" id="float2"></div>
+                </div>
+            </p> <br>
+
+            <p><b>none</b>
+                <div class="blokulec1">
+                    <div title="#float3 {
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px;
+                        background-color: blue;
+                        float: none;
+                    }" id="float3"></div>
+                    <div title="#float3 {
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px;
+                        background-color: blue;
+                        float: none;
+                    }" id="float3"></div>
+                </div>
+            </p> <br>
+
+
+      <span class="tekstprzez"> (najedź na element aby wyświetlić dymek z kodem CSS)</span><br><br>
+
+            <p>Właściwości <b>clear</b> Określa sposób przylegania do elementów float. Może przyjmowac wartości:</p><br>
+
+            <p><b>none</b> - wartość domyślna.
+                <div class="blokulec3">
+                    <div title=".blokStaly1 {
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px;
+                        background-color: green;
+                        float: right;
+                    }" class="blokStaly1"></div>
+                    <div title=".blokStaly2 {
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px;
+                        background-color: green;
+                        float: left;
+                    }" class="blokStaly2"></div>
+                    <div title="#clear1 {
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px;
+                        background-color: red;
+                        clear: none;
+                    }" id="clear1">clear: none;</div>
+                </div>
+            </p> <br>
+
+            <p><b>left</b> - następny element będzie pod obiektem z lewej strony.
+                <div class="blokulec3">
+
+                    <div title=".blokStaly2 {
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px;
+                        background-color: green;
+                        float: left;
+                    }" class="blokStaly2"></div>
+                    <div title="#clear2 {
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px;
+                        background-color: red;
+                        clear: left;
+                    }
+                    #" id="clear2">clear: left;</div>
+                </div>
+            </p> <br>
+
+            <p><b>right</b> - następny element będzie pod obiektem z prawej strony.
+                <div class="blokulec3">
+                    <div title=".blokStaly1 {
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px;
+                        background-color: green;
+                        float: right;
+                    }" class="blokStaly1"></div>
+                    <div title="#clear3 {
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px;
+                        background-color: red;
+                        clear: right;
+                    }" id="clear3">clear: right;</div>
+                </div>
+            </p> <br>
+
+            <p><b>both</b> - następny element będzie pod obiektem niezależnie od jego położenia.
+                <div class="blokulec3">
+                    <div title=".blokStaly1 {
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px;
+                        background-color: green;
+                        float: right;
+                    }" class="blokStaly1"></div>
+                    <div title=".blokStaly2 {
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px;
+                        background-color: green;
+                        float: left;
+                    }" class="blokStaly2"></div>
+                    <div title="#clear4 {
+                        width: 50px;
+                        height: 50px;
+                        margin: 5px;
+                        background-color: red;
+                        clear: both;
+                    }" id="clear4">clear: both;</div>
+                </div>
+            </p> <br>
+
+
+
+                <span class="tekstprzez"> (najedź na element aby wyświetlić dymek z kodem CSS)</span><br>
+            </p> <br>
+
+
+        </div>
+
+        <hr> <!-- child  57-->
+
+
+
+        <div class="zawartosc"> 
+            <h2 id="zadania">ZADANIA</h2>
+            <h1 id="zadTekst"><b>TEKST</b></h1>
+            <form>
+                <ol>
+                    <li>
+                        <label><b>Jakie wartości definiuje właściwośc <i>text-align</i>?</b></label><br>
+                        <input type="radio" name="p1" value="a"> justify, center, wavy, solid<br>
+                        <input type="radio" name="p1" value="b"> none, left, right, center<br>
+                        <input type="radio" name="p1" value="c"> left, right, center, justify<br>
+                        <input type="radio" name="p1" value="d"> right, center, left, underline<br>
+                    </li>
+                    <span id="odp1-1"></span>
+            </form>
+            <form>        
+                    <li>
+                        <label><b>Czy przy właściwości text-decoration można<br> przypisywać kolor bądź rodzaj podkreślenia?</b></label><br>
+                        <input type="radio" name="p2" value="a"> Tak<br>
+                        <input type="radio" name="p2" value="b"> Nie<br>
+
+                    </li>
+                    <span id="odp1-2"></span>
+            </form>
+            <form>
+                    <li>
+                        <label><b>Co robi właściwość <i>letter-spacing</i>?</b></label><br>
+                        <input type="radio" name="p3" value="a"> Określa sposób wyświetlania skróconego tekstu<br>
+                        <input type="radio" name="p3" value="b"> Określa odległość między słowami<br>
+                        <input type="radio" name="p3" value="c"> Określa odległość pomiędzy literami<br>
+                    </li>
+                    <span id="odp1-3"></span>
+                </ol>
+            </form>
+            <input id="przycisk" onclick="Sprawdz1()" type="button" value="SPRAWDŹ">
+
+            <p>Twój wynik to <span id="wynik1"></span>/3 pkt.</p><br><br>
+
+            
+
+
+
+            <h1 id="zadCzcionka"><b>CZCIONKA</b></h1>
+            <form>
+                <ol>
+                    <li>
+                        <label><b>Jakie stopnie grubości może miec<br> właściwośc <i>font-weight</i>?</b></label><br>
+                        <input type="checkbox" name="p1a" value="a"> 200<br>
+                        <input type="checkbox" name="p1b" value="b"> 100<br>
+                        <input type="checkbox" name="p1c" value="c"> 400<br>
+                        <input type="checkbox" name="p1d" value="d"> 1000<br>
+                    </li>
+                    <span id="odp2-1"></span>
+            </form>
+            <form>        
+                    <li>
+                        <label><b>Co się stanie z tekstem po użyciu<br> właściwości <i>font-style: italic;</i>?</b></label><br>
+                        <input type="radio" name="p2" value="a"> będzie podkreślony<br>
+                        <input type="radio" name="p2" value="b"> będzie pogrubiony<br>
+                        <input type="radio" name="p2" value="c"> będzie pochylony<br>
+                        <input type="radio" name="p2" value="d"> zmieni kolor<br>
+                    </li>
+                    <span id="odp2-2"></span>
+            </form>
+            <form>
+                    <li>
+                        <label><b>Za pomocą jakich jednostek określa się<br> rozmiar czcionki (<i>font-size</i>)? </b></label><br>
+                        <input type="checkbox" name="p3a" value="a"> px<br>
+                        <input type="checkbox" name="p3b" value="b"> ms<br>
+                        <input type="checkbox" name="p3c" value="c"> rad<br>
+                        <input type="checkbox" name="p3d" value="d"> em<br>
+                        <input type="checkbox" name="p3e" value="e"> s<br>
+                        <input type="checkbox" name="p3f" value="f"> %<br>
+                        <input type="checkbox" name="p3g" value="g"> deg<br>
+                    </li>
+                    <span id="odp2-3"></span>
+                </ol>
+            </form>
+            <input id="przycisk" onclick="Sprawdz2()" type="button" value="SPRAWDŹ">
+
+            <p>Twój wynik to <span id="wynik2"></span>/3 pkt.</p><br><br>
+
+
+
+            <h1 id="zadSkalowanie"><b>SKALOWANIE</b></h1>
+            <form>
+                <ol>
+                    <li>
+                        <label><b>Które właściwości służą do określania wysokości?</b></label><br>
+                        <input type="checkbox" name="p1a" value="a"> width<br>
+                        <input type="checkbox" name="p1b" value="b"> max-height<br>
+                        <input type="checkbox" name="p1c" value="c"> max-width<br>
+                        <input type="checkbox" name="p1d" value="d"> height<br>
+                    </li>
+                    <span id="odp3-1"></span>
+            </form>
+            <form>        
+                    <li>
+                        <label><b>Której właściwości użyjemy, jeśli chcemy,<br> żeby nasz element nie mógł być szerszy od 100 px?</b></label><br>
+                        <input type="radio" name="p2" value="a"> max-width: 100px;<br>
+                        <input type="radio" name="p2" value="b"> max-height: 100px;<br>
+                        <input type="radio" name="p2" value="c"> min-width: 100px;<br>
+                    </li>
+                    <span id="odp3-2"></span>
+            </form>
+                </ol>
+            <input id="przycisk" onclick="Sprawdz3()" type="button" value="SPRAWDŹ">
+
+            <p>Twój wynik to <span id="wynik3"></span>/2 pkt.</p><br><br>
+
+
+
+
+            <h1 id="zadTlo"><b>TŁO</b></h1>
+            <form>
+                <ol>
+                    <li>
+                        <label><b>Jakiej wartości używamy do określenia nazwy pliku,<br> z którego ma zostać utworzone tło?</b></label><br>
+                        <input type="radio" name="p1" value="a"> src<br>
+                        <input type="radio" name="p1" value="b"> none<br>
+                        <input type="radio" name="p1" value="c"> url()<br>
+                        <input type="radio" name="p1" value="d"> href<br>
+                    </li>
+                    <span id="odp4-1"></span>
+            </form>
+            <form>        
+                    <li>
+                        <label><b>W którym zdaniu poprawnie stworzono gradient liniowy?</b></label><br>
+                        <input type="radio" name="p2" value="a"> background-image: linear-gradient();<br>
+                        <input type="radio" name="p2" value="b"> background-color: linear-gradient();<br>
+                        <input type="radio" name="p2" value="c"> background-repeat: linear-gradient();<br>
+                    </li>
+                    <span id="odp4-2"></span>
+            </form>
+            <form>
+                    <li>
+                        <label><b>Która wartość <i>background-repeat</i> skaluje tło,<br> tak aby został wypełniony cały obszar </b></label><br>
+                        <input type="radio" name="p3" value="a"> repeat<br>
+                        <input type="radio" name="p3" value="b"> space<br>
+                        <input type="radio" name="p3" value="c"> round<br>
+                        <input type="radio" name="p3" value="d"> all<br>
+                    </li>
+                    <span id="odp4-3"></span>
+                </ol>
+            </form>
+            <input id="przycisk" onclick="Sprawdz4()" type="button" value="SPRAWDŹ">
+
+            <p>Twój wynik to <span id="wynik4"></span>/3 pkt.</p><br><br>
+
+
+
+
+            <h1 id="zadWykazy"><b>WYKAZY</b></h1>
+            <form>
+                <ol>
+                    <li>
+                        <label><b>Która wartość właściwości <i>list-style-type</i> zmieni<br> punktor na duże liczby rzymskie?</b></label><br>
+                        <input type="radio" name="p1" value="a"> lower-alpha<br>
+                        <input type="radio" name="p1" value="b"> lower-greek<br>
+                        <input type="radio" name="p1" value="c"> upper-latin<br>
+                        <input type="radio" name="p1" value="d"> upper-roman<br>
+                    </li>
+                    <span id="odp5-1"></span>
+            </form>
+            <form>     
+                    <li>
+                        <label><b>Które z podanych wartości może przyjąć<br> właściwość <i>list-style-position</i></b></label><br>
+                        <input type="radio" name="p2" value="a"> bottom<br>
+                        <input type="radio" name="p2" value="b"> inside<br>
+                        <input type="radio" name="p2" value="c"> right<br>
+                        <input type="radio" name="p2" value="d"> left<br>
+                    </li>
+                    <span id="odp5-2"></span>
+                </ol>
+            </form>
+            <input id="przycisk" onclick="Sprawdz5()" type="button" value="SPRAWDŹ">
+
+            <p>Twój wynik to <span id="wynik5"></span>/2 pkt.</p><br><br>
+
+
+
+
+            <h1 id="zadObramowanie"><b>OBRAMOWANIE</b></h1>
+            <form>
+                <ol>
+                    <li>
+                        <label><b>Jaką właściwością można zaokrąglić<br> rogi obramowania?</b></label><br>
+                        <input type="radio" name="p1" value="a"> border-image<br>
+                        <input type="radio" name="p1" value="b"> border-width<br>
+                        <input type="radio" name="p1" value="c"> border-style<br>
+                        <input type="radio" name="p1" value="d"> border-radius<br>
+                    </li>
+                    <span id="odp6-1"></span>
+            </form>
+            <form>
+                    <li>
+                        <label><b>W którym zdaniu poprawnie sformułowano<br> pogrubienie górnej krawędzi obramowania?</b></label><br>
+                        <input type="radio" name="p2" value="a"> border-top-width<br>
+                        <input type="radio" name="p2" value="b"> border-width-top<br>
+                        <input type="radio" name="p2" value="c"> top-border-width<br>
+                        <input type="radio" name="p2" value="d"> top-width-border<br>
+                    </li>
+                    <span id="odp6-2"></span>
+                </ol>
+            </form>
+            <input id="przycisk" onclick="Sprawdz6()" type="button" value="SPRAWDŹ">
+
+            <p>Twój wynik to <span id="wynik6"></span>/2 pkt.</p><br><br>
+
+
+
+
+            <h1 id="zadTabela"><b>TABELA</b></h1>
+            <form>
+                <ol>
+                    <li>
+                        <label><b>Do określenia położenia nagłówka tabeli służy:</b></label><br>
+                        <input type="radio" name="p1" value="a"> padding<br>
+                        <input type="radio" name="p1" value="b"> border-spacing<br>
+                        <input type="radio" name="p1" value="c"> caption-side<br>
+                        <input type="radio" name="p1" value="d"> text-align<br>
+                    </li>
+                    <span id="odp7-1"></span>
+                </ol>
+            </form>
+
+            <input id="przycisk" onclick="Sprawdz7()" type="button" value="SPRAWDŹ">
+
+            <p>Twój wynik to <span id="wynik7"></span>/1 pkt.</p><br><br>
+
+
+
+
+            <h1 id="zadLinki"><b>LINKI</b></h1>
+            <form>
+                <ol>
+                    <li>
+                        <label><b>Jak poprawnie odnosić się do pseudoklas?<br> (wybierz poprawne).</b></label><br>
+                        <input type="checkbox" name="p1a" value="a"> a;active<br>
+                        <input type="checkbox" name="p1b" value="b"> a:visited<br>
+                        <input type="checkbox" name="p1c" value="c"> a;link<br>
+                        <input type="checkbox" name="p1d" value="d"> a:focus<br>
+                    </li>
+                    <span id="odp8-1"></span>
+                </ol>
+            </form>
+
+            <input id="przycisk" onclick="Sprawdz8()" type="button" value="SPRAWDŹ">
+
+            <p>Twój wynik to <span id="wynik8"></span>/1 pkt.</p><br><br>
+
+
+
+
+            <h1 id="zadKursory"><b>KURSORY</b></h1>
+            <form>
+                <ol>
+                    <li>
+                        <label><b>Jaką wartość musi przyjąć właściwość <i>cursor</i>,<br> aby miała postać białej łapki?</b></label><br>
+                        <input type="radio" name="p1" value="a"> pointer<br>
+                        <input type="radio" name="p1" value="b"> text<br>
+                        <input type="radio" name="p1" value="c"> help<br>
+                        <input type="radio" name="p1" value="d"> progress<br>
+                    </li>
+                    <span id="odp9-1"></span>
+                </ol>
+            </form>
+
+            <input id="przycisk" onclick="Sprawdz9()" type="button" value="SPRAWDŹ">
+
+            <p>Twój wynik to <span id="wynik9"></span>/1 pkt.</p><br><br>
+
+
+
+
+            <h1 id="zadInne"><b>INNE WŁAŚCIWOŚCI</b></h1>
+            <form>
+                <ol>
+                    <li>
+                        <label><b>Jaką właściwością można określić przeźroczystość obrazu?</b></label><br>
+                        <input type="radio" name="p1" value="a"> display<br>
+                        <input type="radio" name="p1" value="b"> opacity<br>
+                        <input type="radio" name="p1" value="c"> overflow<br>
+                    </li>
+                    <span id="odp10-1"></span>
+            </form>
+            <form>
+                    <li>
+                        <label><b>Jakiemu elementowni nie można zmienić marginesów?</b></label><br>
+                        <input type="radio" name="p2" value="a"> liniowemu<br>
+                        <input type="radio" name="p2" value="b"> blokowemu<br>
+                        <input type="radio" name="p2" value="c"> kwadratowemu<br>
+                    </li>
+                    <span id="odp10-2"></span>
+                </ol>
+            </form>
+            <input id="przycisk" onclick="Sprawdz10()" type="button" value="SPRAWDŹ">
+
+            <p>Twój wynik to <span id="wynik10"></span>/2 pkt.</p><br><br>
+        </div>
+
+    </section>
+
+
+</body>
+</html>

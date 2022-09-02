@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles_definicja.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap" rel="stylesheet">
+    <title>Definicja CSS</title>
+    <script src="darkmode.js" async></script>
+    <script>
+        function Sprawdz() {
+            var licznik = 0;
+
+            // pytanie 1
+            f1 = document.forms[0];
+            if (f1.p1.value == "b") {
+                licznik++;
+                document.getElementById("odp1").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp1").innerHTML = "Źle";
+        
+             //pytanie 2
+             f2 = document.forms[1];
+             if (f2.p2a.checked == true && f2.p2b.checked == false &&
+                f2.p2d.checked == true && f2.p2c.checked == false) {
+                licznik++;
+                document.getElementById("odp2").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp2").innerHTML = "Źle";
+
+            //pytanie 3
+            f3 = document.forms[2];
+            if (f3.p3.value == "c") {
+                licznik++;
+                document.getElementById("odp3").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp3").innerHTML = "Źle";
+            //pytanie 4
+            f4 = document.forms[3];
+            if (f4.p4.value == "c") {
+                licznik++;
+                document.getElementById("odp4").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp4").innerHTML = "Źle";
+
+
+                document.getElementById("wynik").innerHTML = licznik;
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1 class="litera">Definicja CSS</h1>
+        <div id="fade" ></div>
+        <div id="fade2" ></div>     
+        
+    </header>
+    <div id="foot">
+        <div id="darkBox">
+            <input id="darkSwitch" type="checkbox">
+            <label for="darkSwitch">
+                <div id="darkBall"></div>
+            </label>
+        </div>
+        <p>Oliwia Skała | Tomasz Sobczyk | 3CT</p
+            ></div>
+
+    <a id="powrot" href="index.html">Powrót</a>
+    <section>
+
+        <div class="zawartosc"> <!-- child 1 -->
+            <h2>DEFINICJA CSS</h2>
+            <p><b>CSS</b> - (kaskadowe arkusze stylów ang. Cascading Style Sheets) jest językiem przeznaczonym do tworzenia arkuszy (plików), za których pomocą określa się cechy poszczególnych znaczników, czyli po prostu wygląd strony.</p>
+        </div>
+
+        <hr> <!-- child 2 -->
+
+        <div class="zawartosc"> <!-- child 3 -->
+            <h2>STRUKTURA ARKUSZA STYLÓW</h2>
+            <p><b>Style CSS</b> składają się z listy <b>reguł</b> (dyrektyw).<br><br>
+            Każda reguła składa się z <b>selektora</b> i <b>deklaracji</b>.<br><br>
+            Deklaracja składa się z <b>właściwości</b>, którym przypisuje się określone <b>wartości</b>.<br><br>
+            </p>
+            <p>
+                Skłądnia pojedyńczej reguły wygląda w następujący sposób:
+            </p>
+            <span class="script">
+                selektor {
+                    właściwość1: wartość1;
+                    właściwość2: wartość2;
+                    właściwość3: wartość3;
+                }
+            </span>
+        </div>
+
+        <div class="zawartosc"> <!-- child 4 -->
+            <h2>STRUKTURA ARKUSZA STYLÓW</h2>
+            <p><b>Selektorem</b> może być wybrany element strony lub grupa elementów (elementy można grupować za pomocą atrybutów id i class). Wewnątrz nawiasów klamrowych deklaruje się cechy danego elementu w postaci właściwości. Każdej właściwości po dwukropku przyporządkowuje się wartości. Zapis każdej deklaracji kończymy średnikiem.<br><br>
+            </p>
+            <p>
+                Przykładowa deklaracja dla każdego elementu <b>p</b> na stronie:
+            </p>
+            <span class="script">
+                p {
+                    text-align: center;
+                    color: blue;
+                }
+            </span>
+            <p>(wszystkie paragrafy zostaną wyśrodkowane i zapisane niebieską czcionką)</p>
+        </div>
+
+        <hr> <!-- child 5 -->
+
+        <div class="zawartosc"> <!-- child 6 -->
+
+            <h2>METODY DOŁĄCZANIA STYLÓW</h2>
+            <p>Istnieją trzy metody dołączania kaskadowych arkuszy stylów do dokumentów HTML.</p><br>
+            <ol>
+            <li><b>Metoda inline</b> (styl wpisany, lokalny). W tej metodzie stosuje się atrybut <b>style</b> dla wybranego znacznika jezyka HTML.<br>
+            <img src="obrazki/screeny_testowe/metoda inline.png">
+            </li>
+
+            <li><b>Metoda osadzenia w nagłówku</b> &lthead> (styl wewnętrzny). Taki arkusz stylów definiuje się w nagłówku dokumentu HTML, wewnątrz znaczników <b>&ltstyle></b> oraz <b>&lt/style></b>.<br>
+            <img src="obrazki/screeny_testowe/metoda 2.png"> 
+            </li>
+            <li>
+                <b>Metoda łączenia z plikiem zewnętrznym</b> (styl zewnętrzny). Polega na utworzeniu oddzielnego pliku, który zawiera listę reguł. Plik zapisujemy rozszerzeniem <b>.css</b>, a następnie definiujemy polączenie z nim za pomocą znacznika <b>&ltlink></b> w nagłowku dokumentu HTML następującym kodem:
+                <span class="script">
+                    &ltlink rel="stylesheet" type="text/css" href="nazwa.css">
+                </span>
+
+            </li>
+            </ol>
+            <br>
+            <p>Oprócz tego każda z przeglądarek ma dodatkowo własne wbudowane arkusze stylów.</p>
+        </div>
+
+        <hr> <!-- child 7 -->
+
+
+        <div class="zawartosc"> <!-- child 8 -->
+            <h2>ZADANIA</h2>
+            <form>
+                <ol>
+                    <li>
+                        <label><b>Poprawne rozwinięcie skrótu CSS to:</b></label><br>
+                        <input  type="radio" name="p1" value="a"> Kaskadowe Arkusze Skrótów<br>
+                        <input  type="radio" name="p1" value="b"> Kaskadowe Arkusze Stylów<br>
+                        <input  type="radio" name="p1" value="c"> Kaskadowe Style Strony<br>
+                    </li>
+                    <span id="odp1"></span>
+            </form>
+            <form>        
+                    <li>
+                        <label><b>Z czego składa się reguła (dyrektywa) w CSS:<br> (wybierz dwie)</b></label><br>
+                        <input type="checkbox" name="p2a" value="a">
+                        selektor<br>
+                        <input type="checkbox" name="p2b" value="b">
+                        właściwości<br>
+                        <input type="checkbox" name="p2c" value="c">
+                        wartości<br>
+                        <input type="checkbox" name="p2d" value="d">
+                        deklaracja<br>
+                    </li>
+                    <span id="odp2"></span>
+            </form>
+            <form>
+                    <li>
+                        <label><b>Które z podanych może być selektorem:</b></label><br>
+                        <input type="radio" name="p3" value="a"> class, id<br>
+                        <input type="radio" name="p3" value="b"> color, font-size, text-align<br>
+                        <input type="radio" name="p3" value="c"> p, h1, nav<br>
+                    </li>
+                    <span id="odp3"></span>
+                
+            </form>
+            <form>
+                <li>
+                    <label><b>Poprawnie dodany, zewnętrzny plik CSS do strony to:</b></label><br>
+                    <input type="radio" name="p4" value="a"> &ltlink rel="nazwa.css" type="css"><br>
+                    <input type="radio" name="p4" value="b">  &ltscript rel="stylesheet" type="text/css" href="nazwa.css"><br>
+                    <input type="radio" name="p4" value="c"> &ltlink rel="stylesheet" type="text/css" href="nazwa.css"><br>
+                    <input type="radio" name="p4" value="d"> &ltscript rel="nazwa.css" type="text/css"><br>
+                </li>
+                <span id="odp4"></span>
+            
+        </form>
+        </ol>
+            <input id="przycisk" onclick="Sprawdz()" type="button" value="SPRAWDŹ">
+
+            <p>Twój wynik to <span id="wynik"></span>/4 pkt.</p>
+        </div>
+
+    </section>
+
+
+</body>
+</html>

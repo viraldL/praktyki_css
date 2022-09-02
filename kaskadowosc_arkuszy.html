@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles_kaskadowosc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap" rel="stylesheet">
+    <title>Kaskadowość arkuszy stylów</title>
+    <script src="darkmode.js" async></script>
+    <script>
+        function Sprawdz() {
+            var licznik = 0;
+
+            // pytanie 1
+            f1 = document.forms[0];
+            if (f1.p1.value == "c") {
+                licznik++;
+                document.getElementById("odp1").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp1").innerHTML = "Źle";
+        
+             //pytanie 2
+             f2 = document.forms[1];
+             if (f2.p2a.checked == false && f2.p2b.checked == true &&
+                f2.p2d.checked == false && f2.p2c.checked == true && f2.p2e.checked == false && f2.p2f.checked == true) {
+                licznik++;
+                document.getElementById("odp2").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp2").innerHTML = "Źle";
+
+            //pytanie 3
+            f3 = document.forms[2];
+            if (f3.p3.value == "a") {
+                licznik++;
+                document.getElementById("odp3").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp3").innerHTML = "Źle"; 
+            //pytanie 4
+            f4 = document.forms[3];
+            if (f4.p4.value == "d") {
+                licznik++;
+                document.getElementById("odp4").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp4").innerHTML = "Źle";     
+
+
+                document.getElementById("wynik").innerHTML = licznik;
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1 class="litera">Kaskadowość arkuszy stylów</h1>
+        <div id="fade" ></div>
+        <div id="fade2" ></div>     
+        
+    </header>
+    <div id="foot">
+        <div id="darkBox">
+            <input id="darkSwitch" type="checkbox">
+            <label for="darkSwitch">
+                <div id="darkBall"></div>
+            </label>
+        </div>
+        <p>Oliwia Skała | Tomasz Sobczyk | 3CT</p></div>
+
+    <a id="powrot" href="index.html">Powrót</a>
+    <section>
+
+        <div class="zawartosc"> <!-- child 1 -->
+            <h2>KASKADOWOŚĆ</h2>
+            <p><b>Kaskadowość</b> arkuszy stylów określa kolejność oddziaływania stylu zależnie od metody dołączenia kodu do formatowanego dokumentu HTML</p>
+        </div>
+
+        <div class="zawartosc"> <!-- child 2 -->
+            <h2>KASKADOWOŚĆ</h2>
+            <p>Style o wyższym priorytecie mają pierwszeństwo w modyfikowaniu elementów dokumentu HTML. Style o niższym priorytecie mogą zmieniać formatowanie jakiegoś elementu tylko wtedy jeżeli styl o wyższym priorytecie nie definiują formatowania tego elementu.</p><br>
+            <img id="zdj1" src="obrazki/kaskadowosc/kaskadowosc_css.png">
+        </div>
+
+        <hr> <!-- child 3 -->
+
+        <div class="zawartosc"> <!-- child 4 -->
+            <h2>KOMENTARZE W CSS</h2>
+            <p>Tak samo jak w dokumentach HTML, w CSS możemy dodawac <b>komentarze</b> za pomocą składni:</p>
+            <span class="script">
+                /* komentarz do arkuszu CSS */
+            </span>
+        </div>
+
+        <hr> <!-- child 5 -->
+
+        <div class="zawartosc"> <!-- child 6 -->
+            <h2>DZIEDZICZENIE</h2>
+            <p>Struktura każdego dokumentu HTML opiera się na hierarchicznej budowie <b>drzewa dokumentu</b>. Każdy element w drzewie dokumentu ma dokładnie <b>jednego rodzica</b>, oprócz elementu głównego, czyli korzenia drzewa, którym jest zawsze element <b>&ltHTML></b>. </p><br>
+            <img id="zdj2" src="obrazki/kaskadowosc/dziedziczenie.png">
+        </div>
+
+        <div class="zawartosc"> <!-- child 7 -->
+            <h2>DZIEDZICZENIE</h2>
+            <p>Pozycja w danej hierarchi decyduje również o <b>dziedziczeniu</b> pewnych cech (np. wyglądu) od elementów znajdujących się wyżej. Nie wszystkie właściwości CSS są dziedziczone automatycznie. Niektóre elementy HTML mają domyślne właściwości (np. h4).</p><br>
+            <img id="zdj3" src="obrazki/kaskadowosc/dziedziczenie2.png"><br>
+            <p>(element p oraz div odziedziczyły od elementu body właściwość font-size. Element h3 nie odziedziczył właściwości, ponieważ ma swój nadrzędny styl.)</p>
+        </div>
+
+        <div class="zawartosc"> <!-- child 8 -->
+            <h2>DZIEDZICZENIE</h2>
+            <p><b>Właściwości, które nie są dziedziczone:</b></p><br>
+            <ul>
+                <li class="script">background,</li>
+                <li class="script">border,</li>
+                <li class="script">margin,</li>
+                <li class="script">padding,</li>
+                <li class="script">width,</li>
+                <li class="script">height,</li>
+            </ul>
+        </div>
+
+        <hr> <!-- child 9 -->
+
+        <div class="zawartosc">  <!-- child 10 -->
+            <h2>ZADANIA</h2>
+            <form>
+                <ol>
+                    <li>
+                        <label><b>Poprawnie napisany komentarz w CSS to:</b></label><br>
+                        <input id="p1a" type="radio" name="p1" value="a"> &lt!-- Komentarz --><br>
+                        <input id="p1b" type="radio" name="p1" value="b"> // Komentarz<br>
+                        <input id="p1c" type="radio" name="p1" value="c"> /* Komentarz */<br>
+                        <input id="p1d" type="radio" name="p1" value="d"> # [Komentarz] <br>
+                    </li>
+                    <span id="odp1"></span>
+            </form>
+            <form>        
+                    <li>
+                        <label><b>Które z podanych właściwości NIE są dziedziczone?</b></label><br>
+                        <input id="p2a" type="checkbox" name="p2a" value="a">
+                        font-size<br>
+                        <input id="p2b" type="checkbox" name="p2b" value="b">
+                        width<br>
+                        <input id="p2c" type="checkbox" name="p2c" value="c">
+                        height<br>
+                        <input id="p2d" type="checkbox" name="p2d" value="d">
+                        color<br>
+                        <input id="p2e" type="checkbox" name="p2e" value="e">
+                        font-weight<br>
+                        <input id="p2f" type="checkbox" name="p2f" value="f">
+                        background<br>
+                    </li>
+                    <span id="odp2"></span>
+            </form>
+            <form>
+                    <li>
+                        <label><b>Który z podanych elementów ma swój własny styl formatowania?</b></label><br>
+                        <input id="p3a" type="radio" name="p3" value="a"> h1<br>
+                        <input id="p3b" type="radio" name="p3" value="b"> p<br>
+                        <input id="p3c" type="radio" name="p3" value="c"> div<br>
+                        <input id="p3d" type="radio" name="p3" value="d"> span<br>
+                    </li>
+                    <span id="odp3"></span>
+                
+            </form>
+            <form>
+                <li>
+                    <label><b>Która metoda dodania stylu CSS jest najwyżej w hierarchi?</b></label><br>
+                    <input id="p4a" type="radio" name="p4" value="a"> CSS inline<br>
+                    <input id="p4b" type="radio" name="p4" value="b"> CSS w zewnętrznym pliku<br>
+                    <input id="p4c" type="radio" name="p4" value="c"> CSS w nagłówku strony<br>
+                    <input id="p4d" type="radio" name="p4" value="d"> CSS definiowany przez przeglądarkę<br>
+                </li>
+                <span id="odp4"></span>
+            
+        </form>
+        </ol>
+            <input id="przycisk" onclick="Sprawdz()" type="button" value="SPRAWDŹ">
+
+            <p>Twój wynik to <span id="wynik"></span>/4 pkt.</p>
+        </div>
+
+    </section>
+
+
+</body>
+</html>

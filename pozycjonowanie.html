@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles_pozycjonowanie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap" rel="stylesheet">
+    <title>Pozycjonowanie elementów</title>
+
+    <script>
+        function Sprawdz() {
+            var licznik = 0;
+
+            // pytanie 1
+            f1 = document.forms[0];
+            if (f1.p1.value == "c") {
+                licznik++;
+                document.getElementById("odp1").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp1").innerHTML = "Źle";
+        
+             //pytanie 2
+             f2 = document.forms[1];
+            if (f2.p2.value == "b") {
+                licznik++;
+                document.getElementById("odp2").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp2").innerHTML = "Źle";
+
+            //pytanie 2
+            f3 = document.forms[2];
+            if (f3.p3.value == "d") {
+                licznik++;
+                document.getElementById("odp3").innerHTML = "Dobrze";
+            }
+            else 
+                document.getElementById("odp3").innerHTML = "Źle";
+
+
+                document.getElementById("wynik").innerHTML = licznik;
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1 class="litera">Pozycjonowanie elementów</h1>
+        <div id="fade" ></div>
+        <div id="fade2" ></div>     
+        
+    </header>
+    <div class="foot"><p>Oliwia Skała | Tomasz Sobczyk | 3CT</p></div>
+
+    <a id="powrot" href="index.html">Powrót</a>
+    <section>
+
+        <div class="zawartosc"> <!-- child 1 -->
+            <h2>POZYCJONOWANIE</h2>
+            <p><b>position</b> pozwala na precyzyjne określenia miejsca, w którym dany element ma być wyświetlany na stronie. Wszystkie elementy mogą być rozmieszczone na jeden z następujących sposobów:</p><br>
+
+            <p><b>static</b> - element wyświetla się tak jak wynika to z układu w dokumencie HTML.</p><br>
+
+            <p><b>relative</b> - element umieszczony względem swojego normalnego położenia.</p><br>
+
+            <p><b>absolute</b> - element umieszczony w pozycji absolutnej, określonej względem obiektu nadrzędnego.</p><br>
+
+            <p><b>fixed</b> - element umieszczony względem okna przeglądarki.</p><br>
+        </div>
+
+        <div class="zawartosc"> <!-- child 1 -->
+            <h2>POZYCJONOWANIE</h2>
+            <p>Właściwości <b>top, right, bottom, left</b> pozwalają na przesunięcie elementu o wskazane wartości (nie działają dla wartości <b>static</b>).<br><br> Element z pozycjonowaniem <b>absolute</b> będzie się przesuwać względem granic obiektu nadrzędnego lub okna przeglądarki.<br><br> Element z pozycjonowanie <b>relative</b> będzie się przesuwać względem granic naturalnego położenia.</p><br>
+
+            <div class="blokulec">
+                <div title="#blokR {
+                    position: relative;
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                }" id="blokR">
+                    <div title="#blokA {
+                        position: absolute;
+                        width: 40px;
+                        height: 40px;
+                        background-color: blue;
+                    }" id="blokA"></div>
+                </div>
+            </div><br>
+            <p>
+                <div id="tekst1">Blok relatywny</div>
+                <div id="tekst2">Blok absolutny</div>
+            </p><br>
+
+            <p>Przesunięcie o left: 20px;</p>
+            <div class="blokulec">
+                <div title="#blokR {
+                    position: relative;
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                }" id="blokR">
+                    <div title="#blokA2 {
+                        position: absolute;
+                        width: 40px;
+                        height: 40px;
+                        background-color: blue;
+                        left: 20px;
+                    }" id="blokA2"></div>
+                </div>
+            </div><br>
+            <p>
+                <div id="tekst1">Blok relatywny</div>
+                <div id="tekst2">Blok absolutny</div>
+            </p><br>
+
+            <p>Przesunięcie o top: 50px;</p>
+            <div class="blokulec">
+                <div title="#blokR {
+                    position: relative;
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                }" id="blokR">
+                    <div title="#blokA3 {
+                        position: absolute;
+                        width: 40px;
+                        height: 40px;
+                        background-color: blue;
+                        left: 20px;
+                        top: 50px;
+                    }" id="blokA3"></div>
+                </div>
+            </div><br>
+            <p>
+                <div id="tekst1">Blok relatywny</div>
+                <div id="tekst2">Blok absolutny</div>
+            </p><br>
+
+            <span class="tekstprzez"> (najedź na tekst aby wyświetlić dymek z kodem CSS)</span><br>
+
+        </div>
+
+        <div title="#fixed {
+            position: fixed;
+            right: 0;
+            bottom: 60px;
+            z-index: 100;
+        
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            background-color: #a6a6a6;
+            color: #fff;
+            border-radius: 10px;
+        }" id="fixed">
+            Pozycjonowanie fixed.
+            <span class="tekstprzez"> (najedź na tekst aby wyświetlić dymek z kodem CSS)</span><br>
+        </div>
+
+        <div class="zawartosc"> <!-- child 4 -->
+            <h2>POZYCJONOWANIE</h2>
+            <p>Pozycjonowanie może skutkować koniecznością określenia kolejności nakładania się na siebie elementów. Właściwością która ustala tą kolejność jest <b>z-index</b>.</p><br>
+
+            <div class="blokulec">
+                <div title="#blokR {
+                    position: relative;
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                }" id="blokR">
+                    <div title="#blokAa {
+                        position: absolute;
+                        left: 20px;
+                        top: 20px;
+                        z-index: 2;
+                        
+                        width: 100px;
+                        height: 100px;
+                        background-color: blue;
+                    }" id="blokAa"></div>
+                </div>
+            </div><br>
+
+            <p>
+                <div id="tekst1">z-index: 1;</div>
+                <div id="tekst2">z-index: 2;</div>
+            </p><br><br>
+
+            <div class="blokulec">
+                <div title="#blokR2 {
+                    position: relative;
+                    z-index: 2;
+                
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                }" id="blokR2"></div>
+                <div title="#blokAa2 {
+                    position: relative;
+                    right: 80px;
+                    bottom: -20px;
+                    z-index: 1;
+                
+                    width: 100px;
+                    height: 100px;
+                    background-color: blue;
+                }" id="blokAa2"></div>
+            </div><br>
+
+            <p>
+                <div id="tekst1">z-index: 2;</div>
+                <div id="tekst2">z-index: 1;</div>
+            </p><br>
+
+            <span class="tekstprzez"> (najedź na tekst aby wyświetlić dymek z kodem CSS)</span><br>
+
+        </div>
+
+
+
+
+        <hr> <!-- child 5 -->
+
+
+
+        <div class="zawartosc"> <!-- child 6  -->
+            <h2>ZADANIA</h2>
+            <form>
+                <ol>
+                    <li>
+                        <label><b>Która wartość pozycjonowania będzie się<br> przesuwać względem granic elementu nadrzędnego?</b></label><br>
+                        <input  type="radio" name="p1" value="a"> static<br>
+                        <input  type="radio" name="p1" value="b"> relative<br>
+                        <input  type="radio" name="p1" value="c"> absolute<br>
+                        <input  type="radio" name="p1" value="d"> fixed<br>
+
+                    </li>
+                    <span id="odp1"></span>
+            </form>
+            <form>        
+                    <li>
+                        <label><b>Pozycjonowanie <i>fixed</i> umieszcza się względem:</b></label><br>
+                        <input type="radio" name="p2" value="a"> elementu nadrzędnego<br>
+                        <input type="radio" name="p2" value="b"> okna przeglądarki<br>
+                        <input type="radio" name="p2" value="c"> swojego naturalnego położenia<br>
+                        <input type="radio" name="p2" value="d"> rozdzielczości monitora<br>
+                    </li>
+                    <span id="odp2"></span>
+            </form>
+            <form>        
+                <li>
+                    <label><b>Aby obiekt był NAD elementem<br> z <i>z-index: 2; </i>musi posiadać:</b></label><br>
+                    <input type="radio" name="p3" value="a"> position: absolute;<br>
+                    <input type="radio" name="p3" value="b"> z-index: 1;<br>
+                    <input type="radio" name="p3" value="c"> position: relative;<br>
+                    <input type="radio" name="p3" value="d"> z-index: 3;<br>
+                </li>
+                <span id="odp3"></span>
+        </form>
+        </ol>
+            <input id="przycisk" onclick="Sprawdz()" type="button" value="SPRAWDŹ">
+
+            <p>Twój wynik to <span id="wynik"></span>/3 pkt.</p>
+        </div>
+
+    </section>
+
+
+</body>
+</html>
