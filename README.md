@@ -1,6 +1,6 @@
 # praktyki_css
 
-*made for school apprenticeships /w my girlfriend!*
+*one of my first projects - made for school apprenticeships /w my girlfriend!*
 
 *dark mode not finished*
 
